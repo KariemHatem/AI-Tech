@@ -9,15 +9,6 @@
     height: auto;
   }
 }
-button {
-  padding: 2px 16px;
-  transition: 0.3s;
-
-  &:hover {
-    background-color: var(--light-color);
-    color: var(--primary-color);
-  }
-}
 
 .read-more {
   background-color: var(--light-color);
