@@ -1,2 +1,35 @@
 /* You can add global styles to this file, and also import other style files */
 @use 'tailwindcss';
+
+// Setup Global Rules
+:root {
+ --primary-color: #1363C6;
+ --secondary-color: #15ACE1;
+ --light-color: #F4F7FE;
+ --dark-color: #14183E;
+ --text-muted-color: #ffffff80;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+html{
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  height: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body{
+  background-color: var(--light-color);
+  color: #555;
+}
