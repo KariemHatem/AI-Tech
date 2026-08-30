@@ -1,10 +1,11 @@
 // Setup Global Rules
 :root {
- --primary-color: #1363C6;
- --secondary-color: #15ACE1;
- --light-color: #F4F7FE;
- --dark-color: #14183E;
- --text-muted-color: #ffffff80;
+  --primary-color: #1363c6;
+  --secondary-color: #15ace1;
+  --light-color: #f4f7fe;
+  --dark-color: #14183e;
+  --text-muted-color: #ffffff80;
+  --section-padding: 60px;
 }
 
 *,
@@ -14,10 +15,10 @@
 }
 
 body,
-html{
+html {
   margin: 0;
   padding: 0;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -26,22 +27,45 @@ html{
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-body{
-  background-color: var(--light-color);
-  color: #555;
-}
-
+// body {
+//   background-color: var(--light-color);
+//   color: #555;
+// }
 
 .bg-color {
   background-color: var(--primary-color);
 }
 
-.txt-white{
+.bg-white {
+  background-color: var(--light-color);
+}
+
+.txt-white {
   color: var(--light-color);
 }
 
-.txt-muted{
+.txt-muted {
   color: var(--text-muted-color);
 }
 
+.txt-primary {
+  color: var(--primary-color);
+}
 
+.txt-dark {
+  color: var(--dark-color);
+}
+
+.pd-top {
+  padding-top: var(--section-padding);
+}
+
+.pd-bottom {
+  padding-bottom: var(--section-padding);
+}
+
+// Reset Button Styles
+.btn:hover {
+  border-color: var(--primary-color);
+  color: var(--dark-color);
+}
