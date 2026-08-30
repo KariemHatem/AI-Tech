@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row d-flex justify-content-center align-items-center">
       <div class="col-lg-6">
-        <div class="about-image">
+        <div class="about-image mb-3">
           <img src="assets/images/about-img.jpg" alt="AI.Tech" />
         </div>
       </div>
@@ -13,11 +13,27 @@
             sectionHeading="We Make Your Business Smarter with Artificial Intelligence"
             sectionDescription="At AI.Tech, we create smart and innovative AI solutions that simplify challenges and drive progress. Our goal is to make advanced technology accessible, helping businesses and people work smarter every day. Together, we’re shaping a future powered by intelligence and innovation."
           ></app-sec-header>
-          <div class="btns d-flex align-items-center">
-            <button class="btn rounded-pill px-3 py-2 border-light read-more">Read More</button>
-            <button class="btn rounded-pill px-3 py-2 border-light bg-color text-white">
-              Contact Us
-            </button>
+          <div class="row mt-4">
+            @for (data of aboutUsData(); track data.info) {
+              <div class="col-md-6 d-flex align-items-center gap-2 mt-1">
+                <i class="{{ data.icon }} mb-3 txt-white bg-color rounded-pill p-1 "></i>
+                <p class="fw-bold">{{ data.info }}</p>
+              </div>
+            }
+          </div>
+          <!-- Btn & Social -->
+          <div class="social mt-3">
+            <div class="btns d-flex gap-3 align-items-center">
+              <button class="btn bg-color txt-white border-0 rounded-pill px-3 py-2">
+                Read More
+              </button>
+              <div class="icons d-flex align-items-center gap-3">
+                <a><i class="pi pi-facebook txt-primary fs-4"></i></a>
+                <a><i class="pi pi-twitter txt-primary fs-4"></i></a>
+                <a><i class="pi pi-instagram txt-primary fs-4"></i></a>
+                <a><i class="pi pi-linkedin txt-primary fs-4"></i></a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
