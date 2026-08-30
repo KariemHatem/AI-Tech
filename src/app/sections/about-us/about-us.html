@@ -6,7 +6,7 @@
           <img src="assets/images/about-img.jpg" alt="AI.Tech" />
         </div>
       </div>
-      <div class="col-lg-6">
+      <div class="col-lg-6 about-content">
         <div>
           <app-info-button btnText="About Us" customeClass="txt-primary bg-white" />
           <app-sec-header
@@ -15,7 +15,7 @@
           ></app-sec-header>
           <div class="row mt-4">
             @for (data of aboutUsData(); track data.info) {
-              <div class="col-md-6 d-flex align-items-center gap-2 mt-1">
+              <div class="col-md-6 col-sm-6 d-flex align-items-center gap-2 mt-1 items">
                 <i class="{{ data.icon }} mb-3 txt-white bg-color rounded-pill p-1 "></i>
                 <p class="fw-bold">{{ data.info }}</p>
               </div>
