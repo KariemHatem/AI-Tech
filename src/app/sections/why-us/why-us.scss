@@ -1,0 +1,15 @@
+.w-us {
+  background-color: var(--dark-color);
+  background-image: url('/assets/images/bg-hero.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.review-card {
+  background-color: rgba(256, 256, 256, 0.1);
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}

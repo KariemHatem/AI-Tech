@@ -1,6 +1,7 @@
 import { Component, signal } from '@angular/core';
 import { InfoButton } from '../../shared/components/info-button/info-button';
 import { SecHeader } from '../../shared/components/sec-header/sec-header';
+import { WhyUs } from "../why-us/why-us";
 
 interface ourServicesInfo {
   icon: string;
@@ -9,7 +10,7 @@ interface ourServicesInfo {
 }
 
 @Component({
-  imports: [InfoButton, SecHeader],
+  imports: [InfoButton, SecHeader, WhyUs],
   selector: 'app-our-services',
   styleUrl: './our-services.scss',
   templateUrl: './our-services.html',
