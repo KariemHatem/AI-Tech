@@ -32,6 +32,22 @@ html {
 //   color: #555;
 // }
 
+// Reset Button Styles
+.btn:hover {
+  border-color: var(--primary-color);
+  color: var(--dark-color);
+}
+
+// Global Styles
+.re-more {
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    background-color: var(--light-color);
+    color: var(--primary-color);
+  }
+}
+
+// Global Classes
 .bg-color {
   background-color: var(--primary-color);
 }
@@ -56,16 +72,14 @@ html {
   color: var(--dark-color);
 }
 
+.sec-bg-color {
+  background-color: var(--light-color);
+}
+
 .pd-top {
   padding-top: var(--section-padding);
 }
 
 .pd-bottom {
   padding-bottom: var(--section-padding);
-}
-
-// Reset Button Styles
-.btn:hover {
-  border-color: var(--primary-color);
-  color: var(--dark-color);
 }

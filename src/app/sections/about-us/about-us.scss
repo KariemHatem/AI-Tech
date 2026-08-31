@@ -19,14 +19,6 @@
   }
 }
 
-.re-more {
-  transition: all 0.3s ease-in-out;
-  &:hover {
-    background-color: var(--light-color);
-    color: var(--primary-color);
-  }
-}
-
 .icons {
   cursor: pointer;
 
