@@ -5,6 +5,7 @@
   --light-color: #f4f7fe;
   --dark-color: #14183e;
   --text-muted-color: #ffffff80;
+  --text-secondary-color: #4f4b4b94;
   --section-padding: 60px;
 }
 
@@ -62,6 +63,10 @@ html {
 
 .txt-muted {
   color: var(--text-muted-color);
+}
+
+.txt-secondary {
+  color: var(--text-secondary-color);
 }
 
 .txt-primary {

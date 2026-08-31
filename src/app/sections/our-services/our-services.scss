@@ -1,0 +1,76 @@
+img {
+  width: 100px;
+}
+
+h5 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.6px;
+}
+
+p {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.c-service {
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: var(--primary-color);
+    z-index: -1;
+    transition: width 0.3s ease;
+    -webkit-transition: width 0.3s ease;
+    -moz-transition: width 0.3s ease;
+    -ms-transition: width 0.3s ease;
+    -o-transition: width 0.3s ease;
+  }
+
+  &:hover {
+    color: var(--light-color);
+    cursor: pointer;
+    &::before {
+      width: 100%;
+    }
+  }
+
+  &:hover p {
+    color: var(--light-color) !important;
+  }
+}
+
+.read-more {
+  background-color: #eee;
+  color: var(--primary-color);
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: var(--primary-color);
+    z-index: -1;
+    transition: width 0.3s ease;
+  }
+
+  &:hover {
+    color: var(--light-color);
+    &::before {
+      width: 100%;
+    }
+  }
+}
