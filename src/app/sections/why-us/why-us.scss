@@ -13,3 +13,25 @@
   -ms-border-radius: 30px;
   -o-border-radius: 30px;
 }
+
+@media (max-width: 992px) {
+  img {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .w-us {
+    text-align: center;
+  }
+
+  .features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .reviews {
+    flex-direction: column;
+  }
+}
