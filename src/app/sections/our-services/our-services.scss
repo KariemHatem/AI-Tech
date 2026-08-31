@@ -74,3 +74,16 @@ p {
     }
   }
 }
+
+@media (max-width: 768px) {
+  .our-services {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .re-more {
+    margin-bottom: 30px;
+  }
+}
