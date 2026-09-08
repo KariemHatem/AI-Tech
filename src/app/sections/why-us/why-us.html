@@ -1,0 +1,45 @@
+<section class="container-fluid w-us pd-top">
+  <div class="container">
+    <div class="row d-flex align-items-center">
+      <div class="col-lg-6">
+        <app-info-button btnText="Why Choose Us" customeClass="txt-primary bg-white" />
+        <h2 class="fw-bold display-6 txt-white">
+          We’re Leading the AI Industry with 10+ Years of Experience
+        </h2>
+        <p class="mb-3 txt-white">
+          We combine deep industry expertise with cutting-edge AI technology to build intelligent,
+          scalable, and reliable solutions that help businesses innovate faster, work smarter, and
+          achieve measurable results.
+        </p>
+        <div class="features mt-4">
+          @for (items of whyUsData(); track items.icon) {
+            <div class="d-flex align-items-center gap-2 mb-3">
+              <i class="{{ items.icon }} txt-white fs-4"></i>
+              <p class="txt-white fw-bold mb-0">{{ items.info }}</p>
+            </div>
+          }
+        </div>
+        <div class="reviews d-flex align-items-center gap-3 mt-4">
+          <div class="review-card p-3 d-flex align-items-center gap-2">
+            <i class="pi pi-users txt-white fs-1"></i>
+            <div class="review-info">
+              <span class="txt-white fw-bold fs-3">750+</span>
+              <p class="txt-white">Happy Clients</p>
+            </div>
+          </div>
+          <div class="review-card p-3 d-flex align-items-center gap-2">
+            <i class="pi pi-home txt-white fs-1"></i>
+            <div class="review-info">
+              <span class="txt-white fw-bold fs-3">42+</span>
+              <p class="txt-white">Project Completed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <img src="assets/images/feature.png" alt="AI.Tech" class="img-fluid" />
+      </div>
+    </div>
+  </div>
+</section>
+<app-case-study></app-case-study>

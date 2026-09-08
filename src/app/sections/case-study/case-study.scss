@@ -1,0 +1,71 @@
+.overlay {
+  position: absolute;
+  padding: 30px;
+  top: 0;
+  left: 0;
+  background: linear-gradient(rgba(20, 24, 62, 0), #14183e1a);
+  z-index: 1;
+}
+.c-card-content {
+  position: relative;
+  h5 {
+    padding: 3px 15px;
+    border-radius: 50px;
+    background: rgb(20 24 62 / 46%);
+    position: absolute;
+    bottom: 100%;
+  }
+}
+
+.c-card {
+  cursor: pointer;
+  img {
+    transition: transform 0.4s ease;
+    -webkit-transition: transform 0.4s ease;
+    -moz-transition: transform 0.4s ease;
+    -ms-transition: transform 0.4s ease;
+    -o-transition: transform 0.4s ease;
+  }
+  &:hover img {
+    transform: scale(1.1);
+  }
+}
+
+// load more button
+button {
+  padding: 10px 15px;
+  border-radius: 50px;
+  cursor: pointer;
+  border: 0;
+  color: hsl(0, 0%, 100%);
+  background-color: hwb(224 6% 9%);
+  box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 15px;
+  transition: all 0.5s ease;
+}
+
+button:hover {
+  letter-spacing: 3px;
+  background-color: hwb(224 6% 9%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(24, 76, 220) 0px 0px 0px 0px;
+}
+
+button:active {
+  letter-spacing: 3px;
+  background-color: hwb(224 6% 9%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(24, 76, 220) 0px 0px 0px 0px;
+  transform: translateY(10px);
+  transition: 100ms;
+}
+
+// Resposnive
+
+@media (max-width: 768px) {
+  h2 {
+    text-align: center;
+  }
+}

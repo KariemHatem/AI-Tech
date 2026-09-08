@@ -1,0 +1,38 @@
+<section class="container-fluid sec-bg-color pd-top pd-bottom">
+  <div class="container">
+    <div class="row d-flex align-items-center">
+      <div class="col-lg-6 our-services">
+        <app-info-button btnText="Our Services" customeClass="txt-primary bg-white" />
+        <app-sec-header
+          sectionHeading="Our Excellent AI Solutions for Your Business"
+          sectionDescription="At AI.Tech, we provide innovative AI-driven solutions designed to empower businesses and individuals. Our services include intelligent automation, data analysis, and smart digital tools that help you save time, reduce costs, and make better decisions."
+        ></app-sec-header>
+        <button class="btn bg-color re-more txt-white border-0 rounded-pill px-3 py-2">
+          Read More
+        </button>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="row">
+          @for (items of ourServicesItems(); track items.icon) {
+            <div class="col-lg-6">
+              <div
+                class="mb-3 c-service bg-white p-4 rounded-4 d-flex flex-column align-items-center justify-content-center text-center"
+              >
+                <img
+                  src="{{ items.icon }}"
+                  class="img-fluid sec-bg-color p-2 rounded-circle"
+                  alt="AI.Tech"
+                />
+                <h5 class="mt-4">{{ items.titile }}</h5>
+                <p class="mt-2 txt-secondary">{{ items.desc }}</p>
+                <button class="btn read-more border-0 rounded-pill px-3 py-1">Read More</button>
+              </div>
+            </div>
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<app-why-us></app-why-us>

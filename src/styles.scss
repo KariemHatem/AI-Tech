@@ -1,2 +1,90 @@
-/* You can add global styles to this file, and also import other style files */
-@use 'tailwindcss';
+// Setup Global Rules
+:root {
+  --primary-color: #1363c6;
+  --secondary-color: #15ace1;
+  --light-color: #f4f7fe;
+  --dark-color: #14183e;
+  --text-muted-color: #ffffff80;
+  --text-secondary-color: #4f4b4b94;
+  --section-padding: 60px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  height: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+// body {
+//   background-color: var(--light-color);
+//   color: #555;
+// }
+
+// Reset Button Styles
+.btn:hover {
+  border-color: var(--primary-color);
+  color: var(--dark-color);
+}
+
+// Global Styles
+.re-more {
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    background-color: var(--light-color);
+    color: var(--primary-color);
+  }
+}
+
+// Global Classes
+.bg-color {
+  background-color: var(--primary-color);
+}
+
+.bg-white {
+  background-color: var(--light-color);
+}
+
+.txt-white {
+  color: var(--light-color);
+}
+
+.txt-muted {
+  color: var(--text-muted-color);
+}
+
+.txt-secondary {
+  color: var(--text-secondary-color);
+}
+
+.txt-primary {
+  color: var(--primary-color);
+}
+
+.txt-dark {
+  color: var(--dark-color);
+}
+
+.sec-bg-color {
+  background-color: var(--light-color);
+}
+
+.pd-top {
+  padding-top: var(--section-padding);
+}
+
+.pd-bottom {
+  padding-bottom: var(--section-padding);
+}
