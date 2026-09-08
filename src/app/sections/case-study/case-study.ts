@@ -1,5 +1,6 @@
 import { Component, computed, signal } from '@angular/core';
 import { InfoButton } from '../../shared/components/info-button/info-button';
+import { Faqs } from '../faqs/faqs';
 
 export interface caseStudyInfo {
   img: string;
@@ -8,7 +9,7 @@ export interface caseStudyInfo {
 }
 
 @Component({
-  imports: [InfoButton],
+  imports: [InfoButton, Faqs],
   selector: 'app-case-study',
   styleUrl: './case-study.scss',
   templateUrl: './case-study.html',

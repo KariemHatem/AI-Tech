@@ -1,0 +1,28 @@
+:host ::ng-deep .p-accordionheader {
+  background-color: #f4f7fe;
+  padding: 10px;
+  transition: all 0.3s ease-in-out;
+  border: none;
+
+  &:focus {
+    box-shadow: none;
+    border-color: var(--primary-color) !important;
+    outline: none;
+    color: var(--light-color) !important;
+    background-color: var(--primary-color) !important;
+  }
+
+  &.p-accordionheader-active {
+    background-color: var(--primary-color) !important;
+    color: var(--light-color) !important;
+  }
+}
+
+// :host
+//   ::ng-deep.p-accordionpanel:not(.p-accordionpanel-active):not(.p-disabled)
+//   > .p-accordionheader:hover {
+//   background: none !important;
+// }
+:host ::ng-deep.p-accordionpanel {
+  border: none !important;
+}
