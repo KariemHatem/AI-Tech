@@ -18,11 +18,14 @@
   }
 }
 
-// :host
-//   ::ng-deep.p-accordionpanel:not(.p-accordionpanel-active):not(.p-disabled)
-//   > .p-accordionheader:hover {
-//   background: none !important;
-// }
 :host ::ng-deep.p-accordionpanel {
   border: none !important;
+}
+
+// Resposnive
+
+@media (max-width: 768px) {
+  h2 {
+    text-align: center;
+  }
 }

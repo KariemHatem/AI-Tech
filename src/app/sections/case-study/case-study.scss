@@ -61,3 +61,11 @@ button:active {
   transform: translateY(10px);
   transition: 100ms;
 }
+
+// Resposnive
+
+@media (max-width: 768px) {
+  h2 {
+    text-align: center;
+  }
+}
