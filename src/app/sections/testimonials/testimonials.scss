@@ -1,0 +1,62 @@
+.divider::before {
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  background-color: var(--primary-color);
+  top: 0;
+  left: 0;
+}
+
+.testimonial-card {
+  max-width: 650px;
+
+  p.fst-italic {
+    line-height: 1.4;
+  }
+}
+
+.testimonials {
+  position: relative;
+
+  ::ng-deep .p-carousel-prev-button,
+  ::ng-deep .p-carousel-next-button {
+    position: absolute;
+    left: -14px;
+    transform: translateX(-50%);
+    z-index: 2;
+    background: #ffffff;
+    border-radius: 50%;
+    border: 1px solid var(--primary-color);
+    transition: all 0.3s ease-in-out;
+
+    .p-button-text.p-button-secondary:not(:disabled):hover {
+      background-color: var(--primary-color);
+      color: var(--light-color);
+    }
+  }
+
+  ::ng-deep .p-button-text.p-button-secondary {
+    color: var(--primary-color);
+  }
+  ::ng-deep .p-carousel-prev-button {
+    top: 35%;
+  }
+
+  ::ng-deep .p-carousel-next-button {
+    top: 55%;
+  }
+}
+
+.review-info {
+  img {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+}
+
+:host ::ng-deep .p-carousel-indicator-active .p-carousel-indicator-button {
+  background-color: var(--primary-color) !important;
+}

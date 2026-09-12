@@ -1,0 +1,48 @@
+<section class="container-fluid sec-bg-color pd-top pd-bottom">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="d-flex justify-content-center flex-column">
+          <app-info-button btnText="Testimonial" customeClass="txt-primary bg-white" />
+          <h2 class="fw-bold display-6 txt-dark">What Say Our Clients!</h2>
+          <p class="txt-secondary">
+            Discover why businesses trust AI.Tech to turn complex challenges into intelligent
+            solutions. Our clients’ experiences reflect our commitment to innovation, reliability,
+            and delivering real business value through AI.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-lg-6 position-relative">
+        <div class="divider"></div>
+        <div class="testimonials">
+          <p-carousel
+            [value]="textimonails()"
+            [numVisible]="1"
+            [numScroll]="1"
+            [circular]="true"
+            [autoplayInterval]="3000"
+          >
+            <ng-template let-testimonial #item>
+              <i class="pi pi-comments txt-primary fw-bold fs-3 mb-3"></i>
+
+              <div class="testimonial-card mx-3 text-center">
+                <p class="txt-secondary fs-5 fst-italic mb-4">"{{ testimonial.desc }}"</p>
+
+                <div class="review-info d-flex flex-column align-items-center">
+                  <img
+                    [src]="testimonial.img"
+                    [alt]="testimonial.name"
+                    class="mb-2"
+                    alt="AI.Tech"
+                  />
+                  <p class="fw-bold mb-0">{{ testimonial.name }}</p>
+                </div>
+              </div>
+            </ng-template>
+          </p-carousel>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
