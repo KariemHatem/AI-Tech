@@ -60,3 +60,29 @@
 :host ::ng-deep .p-carousel-indicator-active .p-carousel-indicator-button {
   background-color: var(--primary-color) !important;
 }
+
+// Resposnive
+@media (max-width: 768px) {
+  .review {
+    margin-top: 10px;
+  }
+  .divider {
+    display: none;
+  }
+  .testimonials {
+    position: none;
+
+    ::ng-deep .p-carousel-prev-button,
+    ::ng-deep .p-carousel-next-button {
+      position: relative;
+      left: 0;
+      transform: translateX(0);
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .row:first-child {
+    text-align: center;
+  }
+}
