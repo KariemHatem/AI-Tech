@@ -88,3 +88,16 @@ html {
 .pd-bottom {
   padding-bottom: var(--section-padding);
 }
+
+.dng-text,
+.succ-text {
+  font-size: 18px;
+}
+
+.dng-text {
+  color: #f30000;
+}
+
+.succ-text {
+  color: #05ff05;
+}

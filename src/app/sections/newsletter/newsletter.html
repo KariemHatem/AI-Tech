@@ -24,7 +24,7 @@
               </button>
             </div>
             @if (newsForm.email().touched() && newsForm.email().invalid()) {
-              <div class="text-danger mb-2">
+              <div class="dng-text mb-2">
                 @for (error of newsForm.email().errors(); track error) {
                   <div>{{ error.message }}</div>
                 }
@@ -32,10 +32,10 @@
             }
           </form>
           @if (subscribed()) {
-            <div class="text-success mb-2">Thanks for subscribing! Check your inbox.</div>
+            <div class="succ-text mb-2">Thanks for subscribing! Check your inbox.</div>
           }
           @if (errorMsg()) {
-            <div class="text-danger mb-2">{{ errorMsg() }}</div>
+            <div class="dng-text mb-2">{{ errorMsg() }}</div>
           }
           <p class="mb-3">
             Get the latest AI insights, trends, and innovations delivered directly to your inbox.
