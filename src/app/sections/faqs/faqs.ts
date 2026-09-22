@@ -1,6 +1,7 @@
 import { Component, signal } from '@angular/core';
 import { AccordionModule } from 'primeng/accordion';
 import { InfoButton } from '../../shared/components/info-button/info-button';
+import { Testimonials } from "../testimonials/testimonials";
 
 export interface Faq {
   value: string;
@@ -9,7 +10,7 @@ export interface Faq {
 }
 
 @Component({
-  imports: [AccordionModule, InfoButton],
+  imports: [AccordionModule, InfoButton, Testimonials],
   selector: 'app-faqs',
   styleUrl: './faqs.scss',
   templateUrl: './faqs.html',
