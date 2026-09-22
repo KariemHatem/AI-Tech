@@ -1,0 +1,11 @@
+.newsletter {
+  background-color: var(--primary-color);
+  background-image: url(/assets/images/bg-hero.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  .newsletter-img {
+    max-width: 100%;
+    height: auto;
+  }
+}
