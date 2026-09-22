@@ -31,6 +31,12 @@
               </div>
             }
           </form>
+          @if (subscribed()) {
+            <div class="text-success mb-2">Thanks for subscribing! Check your inbox.</div>
+          }
+          @if (errorMsg()) {
+            <div class="text-danger mb-2">{{ errorMsg() }}</div>
+          }
           <p class="mb-3">
             Get the latest AI insights, trends, and innovations delivered directly to your inbox.
           </p>
