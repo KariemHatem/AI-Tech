@@ -9,6 +9,28 @@
         <div class="head-txt text-white">
           <h3 class="fw-bold display-6">Stay Ahead of the AI Revolution</h3>
           <!-- Form To Be Added Here -->
+          <form (submit)="onSubmit($event)">
+            <div class="input-group mb-3">
+              <input
+                type="email"
+                class="form-control rounded-pill border-light"
+                placeholder="Enter your email"
+                aria-label="Enter your email"
+                aria-describedby="button-addon2"
+                [formField]="newsForm.email"
+              />
+              <button [disabled]="newsForm().invalid()" class="rounded-pill">
+                <i class="pi pi-send mt-1"></i>
+              </button>
+            </div>
+            @if (newsForm.email().touched() && newsForm.email().invalid()) {
+              <div class="text-danger mb-2">
+                @for (error of newsForm.email().errors(); track error) {
+                  <div>{{ error.message }}</div>
+                }
+              </div>
+            }
+          </form>
           <p class="mb-3">
             Get the latest AI insights, trends, and innovations delivered directly to your inbox.
           </p>

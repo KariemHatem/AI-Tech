@@ -9,3 +9,24 @@
     height: auto;
   }
 }
+button {
+  position: relative;
+  right: 44px;
+  color: var(--primary-color);
+  border: none;
+  background: none;
+  transition: all 0.3s;
+  z-index: 10;
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+
+  i {
+    font-size: 20px;
+  }
+
+  &:hover {
+    transform: rotate(45deg);
+  }
+}
