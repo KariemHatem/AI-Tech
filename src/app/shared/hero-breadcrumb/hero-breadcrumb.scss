@@ -1,0 +1,51 @@
+.hero {
+  background-color: var(--primary-color);
+  background-image: url('/assets/images/bg-hero.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .hero-img {
+    width: 350px;
+    height: auto;
+  }
+}
+
+.img-col {
+  display: flex;
+  justify-content: flex-end;
+}
+
+:host ::ng-deep .p-breadcrumb {
+  background-color: transparent;
+}
+
+:host ::ng-deep .p-breadcrumb-separator,
+:host ::ng-deep .p-breadcrumb-item-link,
+:host ::ng-deep .p-breadcrumb-item-icon {
+  color: var(--light-color);
+}
+:host ::ng-deep .p-breadcrumb-item-link {
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+
+:host ::ng-deep .p-breadcrumb-item-link:hover .p-breadcrumb-item-label {
+  color: var(--text-muted-color);
+}
+
+// Resposnive
+@media (max-width: 992px) {
+  .h-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .img-col {
+    display: flex;
+    justify-content: center;
+  }
+}

@@ -2,7 +2,6 @@ import { Component, signal } from '@angular/core';
 import { InfoButton } from '../../shared/components/info-button/info-button';
 import { ButtonModule } from 'primeng/button';
 import { CarouselModule } from 'primeng/carousel';
-import { Newsletter } from "../newsletter/newsletter";
 
 export interface Testimonial {
   desc: string;
@@ -11,7 +10,7 @@ export interface Testimonial {
 }
 
 @Component({
-  imports: [InfoButton, ButtonModule, CarouselModule, Newsletter],
+  imports: [InfoButton, ButtonModule, CarouselModule],
   selector: 'app-testimonials',
   styleUrl: './testimonials.scss',
   templateUrl: './testimonials.html',

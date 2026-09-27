@@ -1,6 +1,5 @@
 import { Component, signal } from '@angular/core';
 import { InfoButton } from '../../shared/components/info-button/info-button';
-import { CaseStudy } from "../case-study/case-study";
 
 export interface whyUsInfo {
   icon: string;
@@ -8,7 +7,7 @@ export interface whyUsInfo {
 }
 
 @Component({
-  imports: [InfoButton, CaseStudy],
+  imports: [InfoButton],
   selector: 'app-why-us',
   styleUrl: './why-us.scss',
   templateUrl: './why-us.html',

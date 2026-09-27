@@ -1,10 +1,8 @@
 import { Component } from '@angular/core';
-import { Navbar } from "../../layout/navbar/navbar";
-import { InfoButton } from "../../shared/components/info-button/info-button";
-import { AboutUs } from "../about-us/about-us";
+import { InfoButton } from '../../shared/components/info-button/info-button';
 
 @Component({
-  imports: [Navbar, InfoButton, AboutUs],
+  imports: [InfoButton],
   selector: 'app-hero',
   styleUrl: './hero.scss',
   templateUrl: './hero.html',
