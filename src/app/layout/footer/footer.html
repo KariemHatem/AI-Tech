@@ -1,0 +1,68 @@
+<section class="footer container-fluid pt-5 mb-3">
+  <div class="container">
+    <div class="row mb-3">
+      <div class="col-lg-3">
+        <h3 class="fs-2 lh-1 txt-white fw-bold" href="#">
+          AI<p-badge class="bg-color ms-1 w" />Tech
+        </h3>
+        <p class="txt-muted mt-">
+          AI.Tech is a leading provider of artificial intelligence solutions, dedicated to helping
+          businesses of AI to drive innovation and growth.
+        </p>
+      </div>
+      <div class="col-lg-3">
+        <h5 class="lh-1 txt-white" href="#">Get In Touch</h5>
+        <!-- Get In Touch -->
+        @for (item of getInTouch(); track item.icon) {
+          <div class="d-flex align-items-center gap-2 mb-3 txt-muted">
+            <i class="{{ item.icon }}  fs-6"></i>
+            <p class="mb-0">{{ item.info }}</p>
+          </div>
+        }
+        <!-- Social -->
+        <div class="d-flex align-items-center gap-3">
+          @for (social of socials(); track social.icon) {
+            <div class="d-flex align-items-center gap-2 mb-3 txt-muted social">
+              <i class="{{ social.icon }}  fs-5"></i>
+            </div>
+          }
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <h5 class="lh-1 txt-white" href="#">Popular Link</h5>
+        <ul class="list-unstyled txt-muted">
+          @for (item of popularLinks(); track item.link) {
+            <li class="mb-2 d-flex align-items-center">
+              <i class="pi pi-angle-right fw-bold fs-5"></i>
+              <a href="#" class="txt-muted text-decoration-none fs-6">{{ item.title }}</a>
+            </li>
+          }
+        </ul>
+      </div>
+      <div class="col-lg-3">
+        <h5 class="lh-1 txt-white" href="#">Popular Link</h5>
+        <ul class="list-unstyled txt-muted">
+          @for (item of ourService(); track item.title) {
+            <li class="mb-2 d-flex align-items-center">
+              <i class="pi pi-angle-right fw-bold fs-5"></i>
+              <a href="#" class="txt-muted text-decoration-none fs-6">{{ item.title }}</a>
+            </li>
+          }
+        </ul>
+      </div>
+    </div>
+    <p-divider />
+    <div class="d-flex align-items-center justify-content-between">
+      <div>
+        <p class="text-center txt-muted">
+          Copyright © 2026 <span class="fw-bold">AI.Tech</span> All Rights Reserved.
+        </p>
+      </div>
+      <div class="hyper-footer">
+        <a href="#" class="txt-muted mx-1">Home</a> | <a href="#" class="txt-muted mx-1">About</a> |
+        <a href="#" class="txt-muted mx-1">Services</a> |
+        <a href="#" class="txt-muted mx-1">Contact</a>
+      </div>
+    </div>
+  </div>
+</section>
