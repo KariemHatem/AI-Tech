@@ -5,9 +5,14 @@
   background-repeat: no-repeat;
 
   .hero-img {
-    max-width: 100%;
+    width: 350px;
     height: auto;
   }
+}
+
+.img-col {
+  display: flex;
+  justify-content: flex-end;
 }
 
 :host ::ng-deep .p-breadcrumb {
@@ -29,4 +34,18 @@
 
 :host ::ng-deep .p-breadcrumb-item-link:hover .p-breadcrumb-item-label {
   color: var(--text-muted-color);
+}
+
+// Resposnive
+@media (max-width: 992px) {
+  .h-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .img-col {
+    display: flex;
+    justify-content: center;
+  }
 }

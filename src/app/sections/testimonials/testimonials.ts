@@ -65,7 +65,7 @@ export class Testimonials {
   ]);
 
   breadCrumbsItems = signal<MenuItem[]>([
-    { label: 'pages', routerLink: '/home' },
-    { label: 'Testimonials', routerLink: '/testimonials' },
+    { label: 'pages', icon: 'pi pi-folder' },
+    { label: 'Testimonials', icon: 'pi pi-comments', routerLink: '/testimonials' },
   ]);
 }
