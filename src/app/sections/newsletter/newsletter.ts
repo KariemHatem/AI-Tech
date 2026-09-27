@@ -5,7 +5,7 @@ import { HttpClient } from '@angular/common/http';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { MessageService } from 'primeng/api';
 import { ToastModule } from 'primeng/toast';
-import { Footer } from "../../layout/footer/footer";
+import { Footer } from '../../layout/footer/footer';
 
 interface NewsletterForm {
   email: string;
