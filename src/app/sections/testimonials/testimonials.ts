@@ -2,8 +2,6 @@ import { Component, signal } from '@angular/core';
 import { InfoButton } from '../../shared/components/info-button/info-button';
 import { ButtonModule } from 'primeng/button';
 import { CarouselModule } from 'primeng/carousel';
-import { HeroBreadcrumb } from '../../shared/hero-breadcrumb/hero-breadcrumb';
-import { MenuItem } from 'primeng/api';
 
 export interface Testimonial {
   desc: string;
@@ -12,7 +10,7 @@ export interface Testimonial {
 }
 
 @Component({
-  imports: [InfoButton, ButtonModule, CarouselModule, HeroBreadcrumb],
+  imports: [InfoButton, ButtonModule, CarouselModule],
   selector: 'app-testimonials',
   styleUrl: './testimonials.scss',
   templateUrl: './testimonials.html',
@@ -62,10 +60,5 @@ export class Testimonials {
       name: 'SmartEdge',
       img: 'assets/images/testm-8.png',
     },
-  ]);
-
-  breadCrumbsItems = signal<MenuItem[]>([
-    { label: 'pages', icon: 'pi pi-folder' },
-    { label: 'Testimonials', icon: 'pi pi-comments', routerLink: '/testimonials' },
   ]);
 }

@@ -33,7 +33,8 @@ export const routes: Routes = [
   },
   {
     path: 'testimonials',
-    loadComponent: () => import('./sections/testimonials/testimonials').then((m) => m.Testimonials),
+    loadComponent: () =>
+      import('./pages/testimonials-page/testimonials-page').then((m) => m.TestimonialsPage),
     title: 'Testimonials',
   },
 ];
