@@ -1,9 +1,10 @@
 import { Component, signal } from '@angular/core';
 import { BadgeModule } from 'primeng/badge';
 import { DividerModule } from 'primeng/divider';
+import { RouterLink } from "@angular/router";
 
 @Component({
-  imports: [BadgeModule, DividerModule],
+  imports: [BadgeModule, DividerModule, RouterLink],
   selector: 'app-footer',
   styleUrl: './footer.scss',
   templateUrl: './footer.html',

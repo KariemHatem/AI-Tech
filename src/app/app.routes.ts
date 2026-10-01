@@ -44,6 +44,20 @@ export const routes: Routes = [
   },
 
   {
+    path: 'privacy-policy',
+    loadComponent: () =>
+      import('./pages/privacy-policy/privacy-policy').then((m) => m.PrivacyPolicy),
+    title: 'Privacy Policy',
+  },
+
+  {
+    path: 'terms-conditions',
+    loadComponent: () =>
+      import('./pages/terms-conditions/terms-conditions').then((m) => m.TermsConditions),
+    title: 'Terms & Conditions',
+  },
+
+  {
     path: '**',
     loadComponent: () => import('./pages/not-found/not-found').then((m) => m.NotFound),
     title: 'Not Found',
