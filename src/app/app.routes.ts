@@ -13,7 +13,7 @@ export const routes: Routes = [
   },
   {
     path: 'services',
-    loadComponent: () => import('./sections/our-services/our-services').then((m) => m.OurServices),
+    loadComponent: () => import('./pages/services-page/services-page').then((m) => m.ServicesPage),
     title: 'Services',
   },
   {
