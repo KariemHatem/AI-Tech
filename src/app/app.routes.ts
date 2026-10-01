@@ -37,4 +37,10 @@ export const routes: Routes = [
       import('./pages/testimonials-page/testimonials-page').then((m) => m.TestimonialsPage),
     title: 'Testimonials',
   },
+
+  {
+    path: '**',
+    loadComponent: () => import('./pages/not-found/not-found').then((m) => m.NotFound),
+    title: 'Not Found',
+  },
 ];
