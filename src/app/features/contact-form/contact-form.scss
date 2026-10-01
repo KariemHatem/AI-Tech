@@ -13,4 +13,7 @@ textarea {
 button {
   display: block;
   margin: 1rem auto 0;
+  &:disabled {
+    cursor: not-allowed;
+  }
 }
