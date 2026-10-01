@@ -2,8 +2,9 @@ import { Component, signal } from '@angular/core';
 import { MenuItem } from 'primeng/api';
 import { HeroBreadcrumb } from '../../shared/hero-breadcrumb/hero-breadcrumb';
 import { WhyUs } from "../../sections/why-us/why-us";
+import { Newsletter } from "../../sections/newsletter/newsletter";
 @Component({
-  imports: [HeroBreadcrumb, WhyUs],
+  imports: [HeroBreadcrumb, WhyUs, Newsletter],
   selector: 'app-features-page',
   styleUrl: './features-page.scss',
   templateUrl: './features-page.html',
