@@ -8,7 +8,7 @@ export const routes: Routes = [
   },
   {
     path: 'about',
-    loadComponent: () => import('./sections/about-us/about-us').then((m) => m.AboutUs),
+    loadComponent: () => import('./pages/about-page/about-page').then((m) => m.AboutPage),
     title: 'About',
   },
   {
