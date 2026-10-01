@@ -5,10 +5,10 @@
       class="navbar-toggler"
       type="button"
       data-bs-toggle="collapse"
-      data-bs-target="#navbarNavDropdown"
-      aria-controls="navbarNavDropdown"
       aria-expanded="false"
       aria-label="Toggle navigation"
+      data-bs-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown"
     >
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -20,17 +20,38 @@
             aria-current="page"
             routerLink="home"
             routerLinkActive="active"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
             >Home</a
           >
         </li>
         <li class="nav-item">
-          <a class="nav-link txt-muted" routerLink="about" routerLinkActive="active">About</a>
+          <a
+            class="nav-link txt-muted"
+            routerLink="about"
+            routerLinkActive="active"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            >About</a
+          >
         </li>
         <li class="nav-item">
-          <a class="nav-link txt-muted" routerLink="services" routerLinkActive="active">Services</a>
+          <a
+            class="nav-link txt-muted"
+            routerLink="services"
+            routerLinkActive="active"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            >Services</a
+          >
         </li>
         <li class="nav-item">
-          <a class="nav-link txt-muted" routerLink="case-study" routerLinkActive="active"
+          <a
+            class="nav-link txt-muted"
+            routerLink="case-study"
+            routerLinkActive="active"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
             >Projects</a
           >
         </li>
@@ -47,25 +68,53 @@
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <li>
-              <a class="dropdown-item" routerLink="why-us" routerLinkActive="active" href="#"
+              <a
+                class="dropdown-item"
+                routerLink="why-us"
+                routerLinkActive="active"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDropdown"
+                href="#"
                 >Features</a
               >
             </li>
 
             <li>
-              <a class="dropdown-item" routerLink="faqs" routerLinkActive="active" href="#">FAQs</a>
+              <a
+                class="dropdown-item"
+                routerLink="faqs"
+                routerLinkActive="active"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDropdown"
+                href="#"
+                >FAQs</a
+              >
             </li>
             <li>
-              <a class="dropdown-item" routerLink="testimonials" routerLinkActive="active" href="#"
+              <a
+                class="dropdown-item"
+                routerLink="testimonials"
+                routerLinkActive="active"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDropdown"
+                href="#"
                 >Testimonials</a
               >
             </li>
           </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link txt-muted" routerLink="contact" routerLinkActive="active">Contact</a>
+          <a
+            class="nav-link txt-muted"
+            routerLink="contact-us"
+            routerLinkActive="active"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            >Contact</a
+          >
         </li>
       </ul>
+      <!-- <i class="pi pi-spin pi-cog"></i> -->
     </div>
   </div>
 </nav>

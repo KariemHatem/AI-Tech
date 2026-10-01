@@ -53,6 +53,10 @@ a {
   }
 }
 
+:host ::ng-deep .p-badge {
+  background: var(--primary-color);
+}
+
 // Responsive
 @media (max-width: 768px) {
   .cop_right {
