@@ -23,7 +23,7 @@ export const routes: Routes = [
   },
   {
     path: 'case-study',
-    loadComponent: () => import('./sections/case-study/case-study').then((m) => m.CaseStudy),
+    loadComponent: () => import('./pages/projects-page/projects-page').then((m) => m.ProjectsPage),
     title: 'Case Study',
   },
   {
