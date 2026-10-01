@@ -18,7 +18,7 @@ export const routes: Routes = [
   },
   {
     path: 'why-us',
-    loadComponent: () => import('./sections/why-us/why-us').then((m) => m.WhyUs),
+    loadComponent: () => import('./pages/features-page/features-page').then((m) => m.FeaturesPage),
     title: 'Why Us',
   },
   {
