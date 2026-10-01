@@ -1,1 +1,72 @@
-<p>contact-form works!</p>
+<div class="contact-form-wrapper d-flex justify-content-center align-items-center py-4">
+  <div class="contact-form">
+    <form (submit)="onSubmit($event)">
+      <label class="form-label fw-semibold">Your Name</label>
+      <input
+        type="text"
+        class="form-control rounded-pill"
+        placeholder="Enter Your Name"
+        [formField]="contactForm.name"
+      />
+      @if (contactForm.name().touched() && contactForm.name().invalid()) {
+        <div class="dng-text mb-2">
+          @for (error of contactForm.name().errors(); track error.message) {
+            <div class="text-danger small mt-1">{{ error.message }}</div>
+          }
+        </div>
+      }
+
+      <label class="form-label fw-semibold mt-4">Your Email</label>
+      <input
+        type="email"
+        class="form-control rounded-pill"
+        placeholder="Enter Your Email"
+        [formField]="contactForm.email"
+      />
+      @if (contactForm.email().touched() && contactForm.email().invalid()) {
+        <div class="dng-text mb-2">
+          @for (error of contactForm.email().errors(); track error.message) {
+            <div class="text-danger small mt-1">{{ error.message }}</div>
+          }
+        </div>
+      }
+
+      <label class="form-label fw-semibold mt-4">Subject</label>
+      <input
+        type="text"
+        class="form-control rounded-pill"
+        placeholder="How can we help?"
+        [formField]="contactForm.subject"
+      />
+      @if (contactForm.subject().touched() && contactForm.subject().invalid()) {
+        <div class="dng-text mb-2">
+          @for (error of contactForm.subject().errors(); track error.message) {
+            <div class="text-danger small mt-1">{{ error.message }}</div>
+          }
+        </div>
+      }
+      <label class="form-label fw-semibold mt-4">Message</label>
+      <textarea
+        class="form-control rounded-4"
+        rows="5"
+        placeholder="Write your message here..."
+        [formField]="contactForm.message"
+      ></textarea>
+      @if (contactForm.message().touched() && contactForm.message().invalid()) {
+        <div class="dng-text mb-2">
+          @for (error of contactForm.message().errors(); track error.message) {
+            <div class="text-danger small mt-1">{{ error.message }}</div>
+          }
+        </div>
+      }
+
+      <button
+        type="submit"
+        [disabled]="contactForm().invalid()"
+        class="btn bg-color txt-white rounded-pill px-4 py-2"
+      >
+        Submit
+      </button>
+    </form>
+  </div>
+</div>
