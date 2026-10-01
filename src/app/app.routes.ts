@@ -28,7 +28,7 @@ export const routes: Routes = [
   },
   {
     path: 'faqs',
-    loadComponent: () => import('./sections/faqs/faqs').then((m) => m.Faqs),
+    loadComponent: () => import('./pages/faqs-page/faqs-page').then((m) => m.FaqsPage),
     title: 'FAQs',
   },
   {
