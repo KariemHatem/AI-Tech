@@ -32,6 +32,11 @@ export const routes: Routes = [
     title: 'FAQs',
   },
   {
+    path: 'contact-us',
+    loadComponent: () => import('./pages/contact-us/contact-us').then((m) => m.ContactUs),
+    title: 'Contact Us',
+  },
+  {
     path: 'testimonials',
     loadComponent: () =>
       import('./pages/testimonials-page/testimonials-page').then((m) => m.TestimonialsPage),
