@@ -35,6 +35,6 @@ export class ContactForm {
     if (!this.contactForm().valid()) return;
 
     // Handle form submission logic here
-    console.log('Form submitted:', this.contactData());
+    // console.log('Form submitted:', this.contactData());
   }
 }
