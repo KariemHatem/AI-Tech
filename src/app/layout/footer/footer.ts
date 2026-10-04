@@ -1,7 +1,7 @@
 import { Component, signal } from '@angular/core';
 import { BadgeModule } from 'primeng/badge';
 import { DividerModule } from 'primeng/divider';
-import { RouterLink } from "@angular/router";
+import { RouterLink } from '@angular/router';
 
 @Component({
   imports: [BadgeModule, DividerModule, RouterLink],
@@ -46,19 +46,27 @@ export class Footer {
   popularLinks = signal([
     {
       title: 'Home',
-      link: '#',
+      link: 'home',
     },
     {
       title: 'About',
-      link: '#',
+      link: 'about',
     },
     {
       title: 'Services',
-      link: '#',
+      link: 'services',
     },
     {
       title: 'Contact',
-      link: '#',
+      link: 'contact-us',
+    },
+    {
+      title: 'Privacy Policy',
+      link: 'privacy-policy',
+    },
+    {
+      title: 'Terms & Conditions',
+      link: 'terms-conditions',
     },
   ]);
 
