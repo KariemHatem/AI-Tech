@@ -199,5 +199,42 @@
       "PREDICTIVE": "Predictive Analytics",
       "VISION": "Computer Vision"
     }
+  },
+  "ABOUT_PAGE": {
+    "BREADCRUMB": "About US",
+    "HEADING": "About US"
+  },
+  "CONTACT": {
+    "BADGE": "Contact Us",
+    "TITLE": "Let's Build Something Smart Together",
+    "DESC": "Get in touch with us to learn more about how we can help you achieve your business goals",
+    "NAME_LABEL": "Your Name",
+    "NAME_PLACEHOLDER": "Enter Your Name",
+    "NAME_REQUIRED": "Please enter your name",
+    "EMAIL_LABEL": "Your Email",
+    "EMAIL_PLACEHOLDER": "Enter Your Email",
+    "EMAIL_REQUIRED": "Please enter your email",
+    "EMAIL_INVALID": "Please enter a valid email address.",
+    "SUBJECT_LABEL": "Subject",
+    "SUBJECT_PLACEHOLDER": "How can we help?",
+    "SUBJECT_REQUIRED": "Please enter a subject",
+    "MESSAGE_LABEL": "Message",
+    "MESSAGE_PLACEHOLDER": "Write your message here...",
+    "MESSAGE_REQUIRED": "Please enter your message.",
+    "SUBMIT": "Submit"
+  },
+  "PAGES": {
+    "PAGES_LABEL": "Pages",
+    "FAQS": "FAQs",
+    "FEATURES": "Features",
+    "PROJECTS": "Projects",
+    "SERVICES": "Services",
+    "TESTIMONIALS": "Testimonials",
+    "NOT_FOUND": {
+      "TITLE": "404",
+      "SUBTITLE": "Page Not Found",
+      "DESC": "We're sorry, the page you have looked for does not exist in our website! Maybe go to our home page or try to use a search?",
+      "BTN": "Go Back to Home"
+    }
   }
 }

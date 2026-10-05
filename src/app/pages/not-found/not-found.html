@@ -1,17 +1,18 @@
-<section class="not-found d-flex justify-content-center align-items-center text-center">
+<section class="not-found d-flex justify-content-center align-items-center text-center mt-5">
   <div class="not-found-content">
     <i class="pi pi-exclamation-triangle txt-primary"></i>
     <div class="d-flex justify-content-center align-items-center flex-column mb-3">
-      <h1 class="fw-bold display-6 txt-dark mb-0">404 <br />Page Not Found</h1>
+      <h1 class="fw-bold display-6 txt-dark mb-0">
+        {{ 'PAGES.NOT_FOUND.TITLE' | translate }} <br />{{ 'PAGES.NOT_FOUND.SUBTITLE' | translate }}
+      </h1>
     </div>
 
     <p class="mb-4 px-3">
-      We’re sorry, the page you have looked for does not exist in our website! Maybe go to our home
-      page or try to use a search?
+      {{ 'PAGES.NOT_FOUND.DESC' | translate }}
     </p>
 
     <button class="bg-color txt-white border-0 rounded-pill px-3 py-2" [routerLink]="['/home']">
-      Go Back to Home
+      {{ 'PAGES.NOT_FOUND.BTN' | translate }}
     </button>
   </div>
 </section>

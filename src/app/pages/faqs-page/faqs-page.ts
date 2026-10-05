@@ -1,17 +1,24 @@
-import { Component, signal } from '@angular/core';
+import { Component, inject, signal } from '@angular/core';
 import { MenuItem } from 'primeng/api';
 import { HeroBreadcrumb } from '../../shared/hero-breadcrumb/hero-breadcrumb';
-import { Faqs } from "../../sections/faqs/faqs";
+import { Faqs } from '../../sections/faqs/faqs';
+import { TranslatePipe } from '@ngx-translate/core';
+import { LangServices } from '../../services/languages/lang-services';
 
 @Component({
-  imports: [HeroBreadcrumb, Faqs],
+  imports: [HeroBreadcrumb, Faqs, TranslatePipe],
   selector: 'app-faqs-page',
   styleUrl: './faqs-page.scss',
   templateUrl: './faqs-page.html',
 })
 export class FaqsPage {
+  lang = inject(LangServices);
   breadCrumbsItems = signal<MenuItem[]>([
-    { label: 'pages', icon: 'pi pi-folder' },
-    { label: 'FAQs', icon: 'pi pi-question-circle', routerLink: '/faqs' },
+    { label: this.lang.translate('PAGES.PAGES_LABEL'), icon: 'pi pi-folder' },
+    {
+      label: this.lang.translate('PAGES.FAQS'),
+      icon: 'pi pi-question-circle',
+      routerLink: '/faqs',
+    },
   ]);
 }
