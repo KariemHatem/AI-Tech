@@ -4,18 +4,17 @@
       <div class="col-lg-3">
         <h3 class="fs-2 lh-1 txt-white fw-bold" href="#">AI<p-badge class="ms-1 w" />Tech</h3>
         <p class="txt-muted mt-">
-          AI.Tech is a leading provider of artificial intelligence solutions, dedicated to helping
-          businesses of AI to drive innovation and growth.
+          {{ 'FOOTER.ABOUT_TEXT' | translate }}
         </p>
       </div>
       <div class="col-lg-3">
         <div class="d-flex flex-column gap-2">
-          <h5 class="lh-1 txt-white" href="#">Get In Touch</h5>
+          <h5 class="lh-1 txt-white" href="#">{{ 'FOOTER.GET_IN_TOUCH' | translate }}</h5>
           <!-- Get In Touch -->
           @for (item of getInTouch(); track item.icon) {
             <div class="d-flex align-items-center gap-2 mb-3 txt-muted">
               <i class="{{ item.icon }}  fs-6"></i>
-              <p class="mb-0">{{ item.info }}</p>
+              <p class="mb-0">{{ item.info | translate }}</p>
             </div>
           }
           <!-- Social -->
@@ -30,13 +29,13 @@
       </div>
       <div class="col-lg-3">
         <div class="d-flex flex-column gap-3">
-          <h5 class="lh-1 txt-white" href="#">Popular Link</h5>
+          <h5 class="lh-1 txt-white" href="#">{{ 'FOOTER.POPULAR_LINK' | translate }}</h5>
           <ul class="list-unstyled txt-muted">
             @for (item of popularLinks(); track item.link) {
               <li class="mb-2 d-flex align-items-center">
                 <i class="pi pi-angle-right fw-bold fs-5"></i>
                 <a href="#" class="txt-muted text-decoration-none fs-6" [routerLink]="item.link">{{
-                  item.title
+                  item.title | translate
                 }}</a>
               </li>
             }
@@ -45,13 +44,13 @@
       </div>
       <div class="col-lg-3">
         <div class="d-flex flex-column gap-3">
-          <h5 class="lh-1 txt-white" href="#">Popular Link</h5>
+          <h5 class="lh-1 txt-white" href="#">{{ 'FOOTER.POPULAR_LINK' | translate }}</h5>
           <ul class="list-unstyled txt-muted">
             @for (item of ourService(); track item.title) {
               <li class="mb-2 d-flex align-items-center">
                 <i class="pi pi-angle-right fw-bold fs-5"></i>
                 <a href="#" class="txt-muted text-decoration-none fs-6" routerLink="case-study">{{
-                  item.title
+                  item.title | translate
                 }}</a>
               </li>
             }
@@ -62,14 +61,25 @@
     <p-divider />
     <div class="d-flex align-items-center justify-content-between cop_right">
       <p class="txt-muted mt-3">
-        Copyright © 2026 <span class="fw-bold">AI.Tech</span> All Rights Reserved.
+        {{ 'FOOTER.COPYRIGHT' | translate }}
       </p>
 
       <div class="hyper-footer">
-        <a href="#" class="txt-muted mx-1 fs-6" routerLink="home">Home</a> |
-        <a href="#" class="txt-muted mx-1 fs-6" routerLink="about">About</a> |
-        <a href="#" class="txt-muted mx-1 fs-6" routerLink="services">Services</a> |
-        <a href="#" class="txt-muted mx-1 fs-6" routerLink="contact-us">Contact</a>
+        <a href="#" class="txt-muted mx-1 fs-6" routerLink="home">{{
+          'FOOTER.LINKS.HOME' | translate
+        }}</a>
+        |
+        <a href="#" class="txt-muted mx-1 fs-6" routerLink="about">{{
+          'FOOTER.LINKS.ABOUT' | translate
+        }}</a>
+        |
+        <a href="#" class="txt-muted mx-1 fs-6" routerLink="services">{{
+          'FOOTER.LINKS.SERVICES' | translate
+        }}</a>
+        |
+        <a href="#" class="txt-muted mx-1 fs-6" routerLink="contact-us">{{
+          'FOOTER.LINKS.CONTACT' | translate
+        }}</a>
       </div>
     </div>
   </div>

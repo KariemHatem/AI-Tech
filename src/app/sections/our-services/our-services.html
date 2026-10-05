@@ -2,13 +2,16 @@
   <div class="container">
     <div class="row d-flex align-items-center">
       <div class="col-lg-6 our-services">
-        <app-info-button btnText="Our Services" customeClass="txt-primary bg-white" />
+        <app-info-button
+          [btnText]="'SERVICES.BADGE' | translate"
+          customeClass="txt-primary bg-white"
+        />
         <app-sec-header
-          sectionHeading="Our Excellent AI Solutions for Your Business"
-          sectionDescription="At AI.Tech, we provide innovative AI-driven solutions designed to empower businesses and individuals. Our services include intelligent automation, data analysis, and smart digital tools that help you save time, reduce costs, and make better decisions."
+          [sectionHeading]="'SERVICES.TITLE' | translate"
+          [sectionDescription]="'SERVICES.DESC' | translate"
         ></app-sec-header>
         <button class="btn bg-color re-more txt-white border-0 rounded-pill px-3 py-2">
-          Read More
+          {{ 'SERVICES.READ_MORE' | translate }}
         </button>
       </div>
 
@@ -24,9 +27,11 @@
                   class="img-fluid sec-bg-color p-2 rounded-circle"
                   alt="AI.Tech"
                 />
-                <h5 class="mt-4">{{ items.titile }}</h5>
-                <p class="mt-2 txt-secondary">{{ items.desc }}</p>
-                <button class="btn read-more border-0 rounded-pill px-3 py-1">Read More</button>
+                <h5 class="mt-4">{{ items.titile | translate }}</h5>
+                <p class="mt-2 txt-secondary">{{ items.desc | translate }}</p>
+                <button class="btn read-more border-0 rounded-pill px-3 py-1">
+                  {{ 'SERVICES.READ_MORE' | translate }}
+                </button>
               </div>
             </div>
           }

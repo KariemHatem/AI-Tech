@@ -2,18 +2,20 @@
   <div class="container">
     <div class="row d-flex justify-content-center align-items-center mb-3">
       <div class="col-lg-6 h-content">
-        <app-info-button btnText="AI.Tech" customeClass="txt-white bg-color border-light" />
+        <app-info-button
+          [btnText]="'HERO.BADGE' | translate"
+          customeClass="txt-white bg-color border-light"
+        />
         <div class="head-txt text-white">
-          <h1 class="fw-bold display-3">Artificial Intelligence for Your Business</h1>
-          <p class="mb-3">
-            AI.Tech is a leading provider of artificial intelligence solutions, dedicated to helping
-            businesses of AI to drive innovation and growth.
-          </p>
+          <h1 class="fw-bold display-3">{{ 'HERO.TITLE' | translate }}</h1>
+          <p class="mb-3">{{ 'HERO.SUBTITLE' | translate }}</p>
         </div>
         <div class="btns d-flex gap-3 align-items-center">
-          <button class="btn rounded-pill px-3 py-2 border-light read-more">Read More</button>
+          <button class="btn rounded-pill px-3 py-2 border-light read-more">
+            {{ 'HERO.READ_MORE' | translate }}
+          </button>
           <button class="btn rounded-pill px-3 py-2 border-light bg-color text-white">
-            Contact Us
+            {{ 'HERO.CONTACT_US' | translate }}
           </button>
         </div>
       </div>

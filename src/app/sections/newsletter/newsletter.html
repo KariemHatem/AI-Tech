@@ -2,12 +2,23 @@
   <div>
     <div class="row d-flex justify-content-center align-items-center">
       <div class="col-lg-6 h-content">
-        <img src="assets/images/newsletter.png" class="newsletter-img mt-5" alt="AI.Tech" />
+        <img
+          [src]="
+            lang.lang() === 'ar'
+              ? 'assets/images/newsletter-rtl.png'
+              : 'assets/images/newsletter.png'
+          "
+          class="newsletter-img mt-5"
+          alt="AI.Tech"
+        />
       </div>
       <div class="col-lg-6">
-        <app-info-button btnText="Newsletter" customeClass="txt-white bg-color border-light" />
+        <app-info-button
+          [btnText]="'NEWSLETTER.BADGE' | translate"
+          customeClass="txt-white bg-color border-light"
+        />
         <div class="head-txt text-white">
-          <h3 class="fw-bold display-6">Stay Ahead of the AI Revolution</h3>
+          <h3 class="fw-bold display-6">{{ 'NEWSLETTER.TITLE' | translate }}</h3>
           <p-toast />
           <!-- Form  -->
           <form (submit)="onSubmit($event)">
@@ -15,8 +26,8 @@
               <input
                 type="email"
                 class="form-control rounded-pill border-light"
-                placeholder="Enter your email"
-                aria-label="Enter your email"
+                [placeholder]="'NEWSLETTER.PLACEHOLDER' | translate"
+                [attr.aria-label]="'NEWSLETTER.PLACEHOLDER' | translate"
                 aria-describedby="button-addon2"
                 [formField]="newsForm.email"
               />
@@ -33,13 +44,13 @@
             }
           </form>
           @if (subscribed()) {
-            <div class="succ-text mb-2">Thanks for subscribing! Check your inbox.</div>
+            <div class="succ-text mb-2">{{ 'NEWSLETTER.SUBSCRIBED' | translate }}</div>
           }
           @if (errorMsg()) {
             <div class="dng-text mb-2">{{ errorMsg() }}</div>
           }
           <p class="mb-3">
-            Get the latest AI insights, trends, and innovations delivered directly to your inbox.
+            {{ 'NEWSLETTER.DESC' | translate }}
           </p>
         </div>
       </div>

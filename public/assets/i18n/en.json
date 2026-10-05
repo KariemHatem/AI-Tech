@@ -1,0 +1,203 @@
+{
+  "HERO": {
+    "BADGE": "AI.Tech",
+    "TITLE": "Artificial Intelligence for Your Business",
+    "SUBTITLE": "AI.Tech is a leading provider of artificial intelligence solutions, dedicated to helping businesses of AI to drive innovation and growth.",
+    "READ_MORE": "Read More",
+    "CONTACT_US": "Contact Us"
+  },
+
+  "NAV": {
+    "HOME": "Home",
+    "ABOUT": "About",
+    "SERVICES": "Services",
+    "PROJECTS": "Projects",
+    "PAGES": "Pages",
+    "FEATURES": "Features",
+    "FAQS": "FAQs",
+    "TESTIMONIALS": "Testimonials",
+    "CONTACT": "Contact"
+  },
+  "ABOUT": {
+    "BADGE": "About Us",
+    "TITLE": "We Make Your Business Smarter with Artificial Intelligence",
+    "DESC": "At AI.Tech, we create smart and innovative AI solutions that simplify challenges and drive progress. Our goal is to make advanced technology accessible, helping businesses and people work smarter every day. Together, we're shaping a future powered by intelligence and innovation.",
+    "AWARD_WINNING": "Award Winning",
+    "PROFESSIONAL_STAFF": "Professional Staff",
+    "SUPPORT": "24/7 Support",
+    "FAIR_PRICES": "Fair Prices",
+    "READ_MORE": "Read More"
+  },
+  "SERVICES": {
+    "BADGE": "Our Services",
+    "TITLE": "Our Excellent AI Solutions for Your Business",
+    "DESC": "At AI.Tech, we provide innovative AI-driven solutions designed to empower businesses and individuals. Our services include intelligent automation, data analysis, and smart digital tools that help you save time, reduce costs, and make better decisions.",
+    "READ_MORE": "Read More",
+    "ROBOTIC": {
+      "TITLE": "Robotic Automation",
+      "DESC": "Our Robotic Process Automation(RPA) solutions streamline repetitive tasks with speed and accuracy."
+    },
+    "PREDICTIVE": {
+      "TITLE": "Predictive Analysis",
+      "DESC": "With our Predictive Analysis solutions, we transform data into foresight. Using advanced algorithms and AI models."
+    },
+    "EDUCATION": {
+      "TITLE": "Education & Science",
+      "DESC": "At AI.Tech, we empower education and scientific research with AI-driven tools. From personalized learning experiences."
+    },
+    "MACHINE_LEARNING": {
+      "TITLE": "Machine learning",
+      "DESC": "Our Machine Learning solutions turn raw data into intelligent insights. By building predictive models and adaptive systems."
+    }
+  },
+  "WHY_US": {
+    "BADGE": "Why Choose Us",
+    "TITLE": "We're Leading the AI Industry with 10+ Years of Experience",
+    "DESC": "We combine deep industry expertise with cutting-edge AI technology to build intelligent, scalable, and reliable solutions that help businesses innovate faster, work smarter, and achieve measurable results.",
+    "PROVEN_RESULTS": "Proven Results",
+    "AI_EXPERTISE": "AI Expertise",
+    "SMART_SOLUTIONS": "Smart Solutions",
+    "HAPPY_CLIENTS": "Happy Clients",
+    "PROJECTS_COMPLETED": "Project Completed"
+  },
+  "CASE_STUDIES": {
+    "BADGE": "Case Studies",
+    "TITLE": "Explore Our Recent AI Case Studies",
+    "LOAD_MORE": "Load More",
+    "AI_ASSISTANT": {
+      "TITLE": "Enterprise AI Assistant",
+      "DESC": "A secure AI assistant that helps teams access knowledge, automate tasks, and make faster, smarter decisions."
+    },
+    "PREDICTIVE": {
+      "TITLE": "Predictive Analysis",
+      "DESC": "Advanced predictive models that identify trends, anticipate outcomes, and help businesses make proactive decisions."
+    },
+    "WORKFLOW": {
+      "TITLE": "Workflow Automation",
+      "DESC": "AI-powered automation that streamlines repetitive processes, reduces manual work, and improves overall productivity."
+    },
+    "ROBOTIC": {
+      "TITLE": "Robotic Automation",
+      "DESC": "Intelligent automation that handles routine operations efficiently, helping businesses save time and reduce operational costs."
+    },
+    "ML": {
+      "TITLE": "Machine Learning",
+      "DESC": "Custom machine learning solutions that transform business data into intelligent predictions, insights, and better decisions."
+    },
+    "CUSTOMER_SUPPORT": {
+      "TITLE": "AI Customer Support",
+      "DESC": "An intelligent support solution that automates customer inquiries and delivers fast, personalized assistance around the clock."
+    },
+    "COMPUTER_VISION": {
+      "TITLE": "Computer Vision",
+      "DESC": "AI-powered vision systems that analyze images and video to automate inspection, monitoring, and visual decision-making."
+    },
+    "DOC_PROCESSING": {
+      "TITLE": "Intelligent Processing",
+      "DESC": "AI that extracts, organizes, and processes information from documents, reducing manual data entry and improving accuracy."
+    },
+    "HR_PLATFORM": {
+      "TITLE": "AI-Powered HR Platform",
+      "DESC": "An intelligent HR solution that streamlines recruitment, employee management, and everyday human resources workflows."
+    }
+  },
+  "FAQ": {
+    "BADGE": "Popular FAQs",
+    "TITLE": "Frequently Asked Questions",
+    "Q1": {
+      "TITLE": "What is AI.Tech?",
+      "CONTENT": "AI.Tech is a leading provider of innovative AI solutions that help businesses leverage artificial intelligence to improve efficiency, automate processes, and make smarter decisions."
+    },
+    "Q2": {
+      "TITLE": "What services does AI.Tech offer?",
+      "CONTENT": "AI.Tech offers a wide range of AI-driven services, including intelligent automation, machine learning, predictive analytics, computer vision, AI assistants, and intelligent document processing."
+    },
+    "Q3": {
+      "TITLE": "Can AI.Tech build a custom AI solution?",
+      "CONTENT": "Yes, AI.Tech develops customized AI solutions tailored to your business goals, workflows, challenges, and specific technical requirements."
+    },
+    "Q4": {
+      "TITLE": "How can AI improve my business?",
+      "CONTENT": "AI can help your business automate repetitive tasks, reduce costs, improve productivity, analyze data, enhance customer experiences, and make faster and more informed decisions."
+    },
+    "Q5": {
+      "TITLE": "Can AI.Tech integrate with existing systems?",
+      "CONTENT": "Yes, our AI solutions can integrate with your existing websites, applications, APIs, databases, CRM systems, and other business platforms to create a seamless workflow."
+    },
+    "Q6": {
+      "TITLE": "Is my business data secure?",
+      "CONTENT": "Yes, data security is a key priority at AI.Tech. We follow appropriate security practices to help protect your business data and ensure your AI solutions are built with privacy and security in mind."
+    },
+    "Q7": {
+      "TITLE": "How long does it take to develop an AI solution?",
+      "CONTENT": "The development time depends on the complexity, features, integrations, and requirements of each project. After understanding your needs, our team can provide a clear development timeline."
+    },
+    "Q8": {
+      "TITLE": "How can I get started with AI.Tech?",
+      "CONTENT": "Getting started is simple. Contact our team and tell us about your business needs or challenges. We will discuss your requirements and recommend the AI solution that best fits your goals."
+    }
+  },
+  "TESTIMONIALS": {
+    "BADGE": "Testimonial",
+    "TITLE": "What Say Our Clients!",
+    "DESC": "Discover why businesses trust AI.Tech to turn complex challenges into intelligent solutions. Our clients' experiences reflect our commitment to innovation, reliability, and delivering real business value through AI.",
+    "T1": {
+      "DESC": "AI.Tech helped us automate several of our daily processes and reduce manual work across our team. The solution was practical, scalable, and delivered exactly what we needed."
+    },
+    "T2": {
+      "DESC": "The AI assistant has completely changed how our team accesses information. We can find answers faster, work more efficiently, and spend more time focusing on our customers."
+    },
+    "T3": {
+      "DESC": "We were impressed by AI.Tech's ability to understand our business challenges and turn them into a practical AI solution. Their team was professional and highly knowledgeable."
+    },
+    "T4": {
+      "DESC": "The predictive analytics solution gave our team better visibility into our data and helped us make more confident, data-driven business decisions."
+    },
+    "T5": {
+      "DESC": "AI.Tech made automation simple for our team. Repetitive tasks can now be handled automatically, allowing our employees to focus on higher-value work."
+    },
+    "T6": {
+      "DESC": "From the first consultation to implementation, the AI.Tech team was easy to work with. They delivered a solution that fit naturally into our existing workflow."
+    },
+    "T7": {
+      "DESC": "Their computer vision solution helped us improve our monitoring process and reduce the amount of manual inspection required by our team."
+    },
+    "T8": {
+      "DESC": "AI.Tech helped us identify where artificial intelligence could create real value for our business. Their strategic approach made a significant difference."
+    }
+  },
+  "NEWSLETTER": {
+    "BADGE": "Newsletter",
+    "TITLE": "Stay Ahead of the AI Revolution",
+    "PLACEHOLDER": "Enter your email",
+    "DESC": "Get the latest AI insights, trends, and innovations delivered directly to your inbox.",
+    "EMAIL_INVALID": "Please enter a valid email address.",
+    "SUBSCRIBED": "Thanks for subscribing! Check your inbox.",
+    "ERROR": "Something went wrong. Please try again.",
+    "TOAST_SUCCESS_TITLE": "Success Message",
+    "TOAST_SUCCESS_DETAIL": "You have successfully subscribed to our newsletter.",
+    "TOAST_ERROR_TITLE": "Error Message"
+  },
+  "FOOTER": {
+    "ABOUT_TEXT": "AI.Tech is a leading provider of artificial intelligence solutions, dedicated to helping businesses of AI to drive innovation and growth.",
+    "GET_IN_TOUCH": "Get In Touch",
+    "POPULAR_LINK": "Popular Link",
+    "COPYRIGHT": "Copyright © 2026 AI.Tech All Rights Reserved.",
+    "ADDRESS": "123 Street, Egypt, Cairo",
+    "LINKS": {
+      "HOME": "Home",
+      "ABOUT": "About",
+      "SERVICES": "Services",
+      "CONTACT": "Contact",
+      "PRIVACY": "Privacy Policy",
+      "TERMS": "Terms & Conditions"
+    },
+    "SERVICES": {
+      "ML": "AI & Machine Learning",
+      "GEN_AI": "Generative AI",
+      "AUTOMATION": "AI Automation",
+      "PREDICTIVE": "Predictive Analytics",
+      "VISION": "Computer Vision"
+    }
+  }
+}

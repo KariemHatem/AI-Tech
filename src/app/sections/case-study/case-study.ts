@@ -1,6 +1,6 @@
 import { Component, computed, signal } from '@angular/core';
 import { InfoButton } from '../../shared/components/info-button/info-button';
-
+import { TranslatePipe } from '@ngx-translate/core';
 export interface caseStudyInfo {
   img: string;
   title: string;
@@ -8,7 +8,7 @@ export interface caseStudyInfo {
 }
 
 @Component({
-  imports: [InfoButton],
+  imports: [InfoButton, TranslatePipe],
   selector: 'app-case-study',
   styleUrl: './case-study.scss',
   templateUrl: './case-study.html',
@@ -19,50 +19,48 @@ export class CaseStudy {
   cStudiesData = signal<caseStudyInfo[]>([
     {
       img: 'assets/images/ai-assistant.jpg',
-      title: 'Enterprise AI Assistant',
-      desc: 'A secure AI assistant that helps teams access knowledge, automate tasks, and make faster, smarter decisions.',
+      title: 'CASE_STUDIES.AI_ASSISTANT.TITLE',
+      desc: 'CASE_STUDIES.AI_ASSISTANT.DESC',
     },
     {
       img: 'assets/images/pred-analysis.jpg',
-      title: 'Predictive Analysis',
-      desc: 'Advanced predictive models that identify trends, anticipate outcomes, and help businesses make proactive decisions.',
+      title: 'CASE_STUDIES.PREDICTIVE.TITLE',
+      desc: 'CASE_STUDIES.PREDICTIVE.DESC',
     },
     {
       img: 'assets/images/work-flow-automation.png',
-      title: 'Workflow Automation',
-      desc: 'AI-powered automation that streamlines repetitive processes, reduces manual work, and improves overall productivity.',
+      title: 'CASE_STUDIES.WORKFLOW.TITLE',
+      desc: 'CASE_STUDIES.WORKFLOW.DESC',
     },
-
     {
       img: 'assets/images/automation.jpg',
-      title: 'Robotic Automation',
-      desc: 'Intelligent automation that handles routine operations efficiently, helping businesses save time and reduce operational costs.',
+      title: 'CASE_STUDIES.ROBOTIC.TITLE',
+      desc: 'CASE_STUDIES.ROBOTIC.DESC',
     },
     {
       img: 'assets/images/ml.jpg',
-      title: 'Machine Learning',
-      desc: 'Custom machine learning solutions that transform business data into intelligent predictions, insights, and better decisions.',
+      title: 'CASE_STUDIES.ML.TITLE',
+      desc: 'CASE_STUDIES.ML.DESC',
     },
     {
       img: 'assets/images/c-support.jpg',
-      title: 'AI Customer Support',
-      desc: 'An intelligent support solution that automates customer inquiries and delivers fast, personalized assistance around the clock.',
+      title: 'CASE_STUDIES.CUSTOMER_SUPPORT.TITLE',
+      desc: 'CASE_STUDIES.CUSTOMER_SUPPORT.DESC',
     },
-
     {
       img: 'assets/images/c-vision.jpg',
-      title: 'Computer Vision ',
-      desc: 'AI-powered vision systems that analyze images and video to automate inspection, monitoring, and visual decision-making.',
+      title: 'CASE_STUDIES.COMPUTER_VISION.TITLE',
+      desc: 'CASE_STUDIES.COMPUTER_VISION.DESC',
     },
     {
       img: 'assets/images/d-processing.jpg',
-      title: 'Intelligent  Processing',
-      desc: 'AI that extracts, organizes, and processes information from documents, reducing manual data entry and improving accuracy.',
+      title: 'CASE_STUDIES.DOC_PROCESSING.TITLE',
+      desc: 'CASE_STUDIES.DOC_PROCESSING.DESC',
     },
     {
       img: 'assets/images/hr-platform.jpg',
-      title: 'AI-Powered HR Platform',
-      desc: 'An intelligent HR solution that streamlines recruitment, employee management, and everyday human resources workflows.',
+      title: 'CASE_STUDIES.HR_PLATFORM.TITLE',
+      desc: 'CASE_STUDIES.HR_PLATFORM.DESC',
     },
   ]);
 

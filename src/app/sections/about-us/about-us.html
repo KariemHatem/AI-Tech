@@ -8,16 +8,19 @@
       </div>
       <div class="col-lg-6 about-content">
         <div>
-          <app-info-button btnText="About Us" customeClass="txt-primary bg-white" />
+          <app-info-button
+            [btnText]="'ABOUT.BADGE' | translate"
+            customeClass="txt-primary bg-white"
+          />
           <app-sec-header
-            sectionHeading="We Make Your Business Smarter with Artificial Intelligence"
-            sectionDescription="At AI.Tech, we create smart and innovative AI solutions that simplify challenges and drive progress. Our goal is to make advanced technology accessible, helping businesses and people work smarter every day. Together, we’re shaping a future powered by intelligence and innovation."
+            [sectionHeading]="'ABOUT.TITLE' | translate"
+            [sectionDescription]="'ABOUT.DESC' | translate"
           ></app-sec-header>
           <div class="row mt-4">
             @for (data of aboutUsData(); track data.info) {
               <div class="col-md-6 col-sm-6 d-flex align-items-center gap-2 mt-1 items">
                 <i class="{{ data.icon }} mb-3 txt-white bg-color rounded-pill p-1 "></i>
-                <p class="fw-bold">{{ data.info }}</p>
+                <p class="fw-bold">{{ data.info | translate }}</p>
               </div>
             }
           </div>
@@ -25,7 +28,7 @@
           <div class="social mt-3">
             <div class="btns d-flex gap-3 align-items-center">
               <button class="btn bg-color re-more txt-white border-0 rounded-pill px-3 py-2">
-                Read More
+                {{ 'ABOUT.READ_MORE' | translate }}
               </button>
               <div class="icons d-flex align-items-center gap-3">
                 <a><i class="pi pi-facebook txt-primary fs-4"></i></a>

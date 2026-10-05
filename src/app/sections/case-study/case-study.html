@@ -1,8 +1,11 @@
 <section class="container-fluid sec-bg-color pd-top">
   <div class="container">
     <div class="sec-content d-flex justify-content-center align-items-center flex-column">
-      <app-info-button btnText="Case Studies" customeClass="txt-primary bg-white" />
-      <h2 class="fw-bold display-6 txt-dark">Explore Our Recent AI Case Studies</h2>
+      <app-info-button
+        [btnText]="'CASE_STUDIES.BADGE' | translate"
+        customeClass="txt-primary bg-white"
+      />
+      <h2 class="fw-bold display-6 txt-dark">{{ 'CASE_STUDIES.TITLE' | translate }}</h2>
     </div>
     <div class="row d-flex align-items-center justify-content-center mt-3">
       @for (items of visibleData(); track items.img) {
@@ -13,19 +16,17 @@
             ></a>
             <img src="{{ items.img }}" alt="AI.Tech" class="img-fluid w-100" />
             <div class="c-card-content p-3">
-              <h5 class="fw-bold txt-white d-inline-block">{{ items.title }}</h5>
-              <p class="txt-secondary mt-1">{{ items.desc }}</p>
+              <h5 class="fw-bold txt-white d-inline-block">{{ items.title | translate }}</h5>
+              <p class="txt-secondary mt-1">{{ items.desc | translate }}</p>
             </div>
           </div>
         </div>
       }
       @if (hasMoreData()) {
         <div class="text-center mb-5">
-          <button (click)="loadMore()">Load More</button>
+          <button (click)="loadMore()">{{ 'CASE_STUDIES.LOAD_MORE' | translate }}</button>
         </div>
       }
     </div>
   </div>
 </section>
-
-

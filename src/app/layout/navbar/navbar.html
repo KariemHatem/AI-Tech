@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-color">
   <div class="container mt-2">
-    <h3 class="fs-2 lh-1 txt-white fw-bold" href="#">AI<p-badge class="bg-black ms-1 w" />Tech</h3>
+    <h3 class="fs-2 lh-1 txt-white fw-bold">AI<p-badge class="bg-black ms-1 w" />Tech</h3>
     <button
       class="navbar-toggler"
       type="button"
@@ -22,7 +22,7 @@
             routerLinkActive="active"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNavDropdown"
-            >Home</a
+            >{{ 'NAV.HOME' | translate }}</a
           >
         </li>
         <li class="nav-item">
@@ -32,7 +32,7 @@
             routerLinkActive="active"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNavDropdown"
-            >About</a
+            >{{ 'NAV.ABOUT' | translate }}</a
           >
         </li>
         <li class="nav-item">
@@ -42,7 +42,7 @@
             routerLinkActive="active"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNavDropdown"
-            >Services</a
+            >{{ 'NAV.SERVICES' | translate }}</a
           >
         </li>
         <li class="nav-item">
@@ -52,19 +52,18 @@
             routerLinkActive="active"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNavDropdown"
-            >Projects</a
+            >{{ 'NAV.PROJECTS' | translate }}</a
           >
         </li>
         <li class="nav-item dropdown">
           <a
             class="nav-link txt-muted dropdown-toggle"
-            href="#"
             id="navbarDropdownMenuLink"
             role="button"
             data-bs-toggle="dropdown"
             aria-expanded="false"
           >
-            Pages
+            {{ 'NAV.PAGES' | translate }}
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <li>
@@ -74,8 +73,7 @@
                 routerLinkActive="active"
                 data-bs-toggle="collapse"
                 data-bs-target="#navbarNavDropdown"
-                href="#"
-                >Features</a
+                >{{ 'NAV.FEATURES' | translate }}</a
               >
             </li>
 
@@ -86,8 +84,7 @@
                 routerLinkActive="active"
                 data-bs-toggle="collapse"
                 data-bs-target="#navbarNavDropdown"
-                href="#"
-                >FAQs</a
+                >{{ 'NAV.FAQS' | translate }}</a
               >
             </li>
             <li>
@@ -97,8 +94,7 @@
                 routerLinkActive="active"
                 data-bs-toggle="collapse"
                 data-bs-target="#navbarNavDropdown"
-                href="#"
-                >Testimonials</a
+                >{{ 'NAV.TESTIMONIALS' | translate }}</a
               >
             </li>
           </ul>
@@ -110,7 +106,7 @@
             routerLinkActive="active"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNavDropdown"
-            >Contact</a
+            >{{ 'NAV.CONTACT' | translate }}</a
           >
         </li>
       </ul>
