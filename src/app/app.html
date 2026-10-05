@@ -1,7 +1,13 @@
-<app-navbar></app-navbar>
-
 <main>
+  <app-navbar></app-navbar>
+
   <router-outlet />
+
+  <app-footer></app-footer>
 </main>
 
-<app-footer></app-footer>
+@if (scrollTopButton()) {
+  <div class="top-button" (click)="scrollToTop()">
+    <i class="pi pi-arrow-up"></i>
+  </div>
+}
