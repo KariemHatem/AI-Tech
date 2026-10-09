@@ -2,33 +2,47 @@
   <div class="container">
     <div class="row d-flex align-items-center">
       <div class="col-lg-6">
-        <app-info-button
-          [btnText]="'WHY_US.BADGE' | translate"
-          customeClass="txt-primary bg-white"
-        />
-        <h2 class="fw-bold display-6 txt-white">
+        <div data-aos="fade-up">
+          <app-info-button
+            [btnText]="'WHY_US.BADGE' | translate"
+            customeClass="txt-primary bg-white"
+          />
+        </div>
+        <h2 class="fw-bold display-6 txt-white" data-aos="fade-up" data-aos-delay="100">
           {{ 'WHY_US.TITLE' | translate }}
         </h2>
-        <p class="mb-3 txt-white">
+        <p class="mb-3 txt-white" data-aos="fade-up" data-aos-delay="200">
           {{ 'WHY_US.DESC' | translate }}
         </p>
         <div class="features mt-4">
-          @for (items of whyUsData(); track items.icon) {
-            <div class="d-flex align-items-center gap-2 mb-3">
+          @for (items of whyUsData(); track items.icon; let i = $index) {
+            <div
+              class="d-flex align-items-center gap-2 mb-3"
+              data-aos="fade-up"
+              [attr.data-aos-delay]="300 + i * 100"
+            >
               <i class="{{ items.icon }} txt-white fs-4"></i>
               <p class="txt-white fw-bold mb-0">{{ items.info | translate }}</p>
             </div>
           }
         </div>
         <div class="reviews d-flex align-items-center gap-3 mt-4">
-          <div class="review-card p-3 d-flex align-items-center gap-2">
+          <div
+            class="review-card p-3 d-flex align-items-center gap-2"
+            data-aos="zoom-in"
+            data-aos-delay="600"
+          >
             <i class="pi pi-users txt-white fs-1"></i>
             <div class="review-info">
               <span class="txt-white fw-bold fs-3">750+</span>
               <p class="txt-white">{{ 'WHY_US.HAPPY_CLIENTS' | translate }}</p>
             </div>
           </div>
-          <div class="review-card p-3 d-flex align-items-center gap-2">
+          <div
+            class="review-card p-3 d-flex align-items-center gap-2"
+            data-aos="zoom-in"
+            data-aos-delay="750"
+          >
             <i class="pi pi-home txt-white fs-1"></i>
             <div class="review-info">
               <span class="txt-white fw-bold fs-3">42+</span>
@@ -38,7 +52,14 @@
         </div>
       </div>
       <div class="col-lg-6">
-        <img src="assets/images/feature.png" alt="AI.Tech" class="img-fluid" />
+        <img
+          src="assets/images/feature.png"
+          alt="AI.Tech"
+          class="img-fluid"
+          data-aos="zoom-in"
+          data-aos-delay="200"
+          data-aos-duration="1000"
+        />
       </div>
     </div>
   </div>

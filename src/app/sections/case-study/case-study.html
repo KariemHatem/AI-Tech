@@ -1,6 +1,9 @@
 <section class="container-fluid sec-bg-color pd-top">
   <div class="container">
-    <div class="sec-content d-flex justify-content-center align-items-center flex-column">
+    <div
+      class="sec-content d-flex justify-content-center align-items-center flex-column"
+      data-aos="fade-up"
+    >
       <app-info-button
         [btnText]="'CASE_STUDIES.BADGE' | translate"
         customeClass="txt-primary bg-white"
@@ -8,8 +11,8 @@
       <h2 class="fw-bold display-6 txt-dark">{{ 'CASE_STUDIES.TITLE' | translate }}</h2>
     </div>
     <div class="row d-flex align-items-center justify-content-center mt-3">
-      @for (items of visibleData(); track items.img) {
-        <div class="col-lg-4 mb-4">
+      @for (items of visibleData(); track items.img; let i = $index) {
+        <div class="col-lg-4 mb-4" data-aos="fade-up" [attr.data-aos-delay]="(i % 3) * 120">
           <div class="c-card mb-3 position-relative rounded-4 overflow-hidden">
             <a
               class="overlay w-100 h-100 d-flex flex-column justify-content-start align-items-start"
@@ -23,7 +26,7 @@
         </div>
       }
       @if (hasMoreData()) {
-        <div class="text-center mb-5">
+        <div class="text-center mb-5" data-aos="fade-up">
           <button (click)="loadMore()">{{ 'CASE_STUDIES.LOAD_MORE' | translate }}</button>
         </div>
       }

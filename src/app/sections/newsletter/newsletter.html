@@ -10,18 +10,24 @@
           "
           class="newsletter-img mt-5"
           alt="AI.Tech"
+          data-aos="zoom-in"
+          data-aos-duration="1000"
         />
       </div>
       <div class="col-lg-6">
-        <app-info-button
-          [btnText]="'NEWSLETTER.BADGE' | translate"
-          customeClass="txt-white bg-color border-light"
-        />
+        <div data-aos="fade-up">
+          <app-info-button
+            [btnText]="'NEWSLETTER.BADGE' | translate"
+            customeClass="txt-white bg-color border-light"
+          />
+        </div>
         <div class="head-txt text-white">
-          <h3 class="fw-bold display-6">{{ 'NEWSLETTER.TITLE' | translate }}</h3>
+          <h3 class="fw-bold display-6" data-aos="fade-up" data-aos-delay="100">
+            {{ 'NEWSLETTER.TITLE' | translate }}
+          </h3>
           <p-toast />
           <!-- Form  -->
-          <form (submit)="onSubmit($event)">
+          <form (submit)="onSubmit($event)" data-aos="fade-up" data-aos-delay="200">
             <div class="input-group mb-3">
               <input
                 type="email"
@@ -38,7 +44,7 @@
             @if (newsForm.email().touched() && newsForm.email().invalid()) {
               <div class="dng-text mb-2">
                 @for (error of newsForm.email().errors(); track error) {
-                  <div>{{ error.message }}</div>
+                  <div>{{ error.message | translate }}</div>
                 }
               </div>
             }
@@ -49,7 +55,7 @@
           @if (errorMsg()) {
             <div class="dng-text mb-2">{{ errorMsg() }}</div>
           }
-          <p class="mb-3">
+          <p class="mb-3" data-aos="fade-up" data-aos-delay="300">
             {{ 'NEWSLETTER.DESC' | translate }}
           </p>
         </div>

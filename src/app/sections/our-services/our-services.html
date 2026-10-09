@@ -2,23 +2,31 @@
   <div class="container">
     <div class="row d-flex align-items-center">
       <div class="col-lg-6 our-services">
-        <app-info-button
-          [btnText]="'SERVICES.BADGE' | translate"
-          customeClass="txt-primary bg-white"
-        />
-        <app-sec-header
-          [sectionHeading]="'SERVICES.TITLE' | translate"
-          [sectionDescription]="'SERVICES.DESC' | translate"
-        ></app-sec-header>
-        <button class="btn bg-color re-more txt-white border-0 rounded-pill px-3 py-2">
+        <div data-aos="fade-up">
+          <app-info-button
+            [btnText]="'SERVICES.BADGE' | translate"
+            customeClass="txt-primary bg-white"
+          />
+        </div>
+        <div data-aos="fade-up" data-aos-delay="100">
+          <app-sec-header
+            [sectionHeading]="'SERVICES.TITLE' | translate"
+            [sectionDescription]="'SERVICES.DESC' | translate"
+          ></app-sec-header>
+        </div>
+        <button
+          class="btn bg-color re-more txt-white border-0 rounded-pill px-3 py-2"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
           {{ 'SERVICES.READ_MORE' | translate }}
         </button>
       </div>
 
       <div class="col-lg-6">
         <div class="row">
-          @for (items of ourServicesItems(); track items.icon) {
-            <div class="col-lg-6">
+          @for (items of ourServicesItems(); track items.icon; let i = $index) {
+            <div class="col-lg-6" data-aos="zoom-in" [attr.data-aos-delay]="150 + i * 120">
               <div
                 class="mb-3 c-service bg-white p-4 rounded-4 d-flex flex-column align-items-center justify-content-center text-center"
               >
