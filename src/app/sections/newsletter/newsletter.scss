@@ -35,6 +35,11 @@ button {
   &:hover {
     transform: rotate(45deg);
   }
+
+  :host-context([dir='rtl']) button {
+    right: unset;
+    left: 44px;
+  }
 }
 
 // Responsive

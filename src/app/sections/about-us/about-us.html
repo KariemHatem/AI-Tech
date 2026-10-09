@@ -2,36 +2,59 @@
   <div class="container">
     <div class="row d-flex justify-content-center align-items-center">
       <div class="col-lg-6">
-        <div class="about-image mb-3">
+        <div class="about-image mb-3" data-aos="zoom-in" data-aos-duration="1000">
           <img src="assets/images/about-img.jpg" alt="AI.Tech" />
         </div>
       </div>
       <div class="col-lg-6 about-content">
         <div>
-          <app-info-button btnText="About Us" customeClass="txt-primary bg-white" />
-          <app-sec-header
-            sectionHeading="We Make Your Business Smarter with Artificial Intelligence"
-            sectionDescription="At AI.Tech, we create smart and innovative AI solutions that simplify challenges and drive progress. Our goal is to make advanced technology accessible, helping businesses and people work smarter every day. Together, we’re shaping a future powered by intelligence and innovation."
-          ></app-sec-header>
+          <div data-aos="fade-up">
+            <app-info-button
+              [btnText]="'ABOUT.BADGE' | translate"
+              customeClass="txt-primary bg-white"
+            />
+          </div>
+          <div data-aos="fade-up" data-aos-delay="100">
+            <app-sec-header
+              [sectionHeading]="'ABOUT.TITLE' | translate"
+              [sectionDescription]="'ABOUT.DESC' | translate"
+            ></app-sec-header>
+          </div>
           <div class="row mt-4">
-            @for (data of aboutUsData(); track data.info) {
-              <div class="col-md-6 col-sm-6 d-flex align-items-center gap-2 mt-1 items">
+            @for (data of aboutUsData(); track data.info; let i = $index) {
+              <div
+                class="col-md-6 col-sm-6 d-flex align-items-center gap-2 mt-1 items"
+                data-aos="fade-up"
+                [attr.data-aos-delay]="200 + i * 100"
+              >
                 <i class="{{ data.icon }} mb-3 txt-white bg-color rounded-pill p-1 "></i>
-                <p class="fw-bold">{{ data.info }}</p>
+                <p class="fw-bold">{{ data.info | translate }}</p>
               </div>
             }
           </div>
           <!-- Btn & Social -->
           <div class="social mt-3">
             <div class="btns d-flex gap-3 align-items-center">
-              <button class="btn bg-color re-more txt-white border-0 rounded-pill px-3 py-2">
-                Read More
+              <button
+                class="btn bg-color re-more txt-white border-0 rounded-pill px-3 py-2"
+                data-aos="fade-up"
+                data-aos-delay="600"
+              >
+                {{ 'ABOUT.READ_MORE' | translate }}
               </button>
               <div class="icons d-flex align-items-center gap-3">
-                <a><i class="pi pi-facebook txt-primary fs-4"></i></a>
-                <a><i class="pi pi-twitter txt-primary fs-4"></i></a>
-                <a><i class="pi pi-instagram txt-primary fs-4"></i></a>
-                <a><i class="pi pi-linkedin txt-primary fs-4"></i></a>
+                <a data-aos="zoom-in" data-aos-delay="700"
+                  ><i class="pi pi-facebook txt-primary fs-4"></i
+                ></a>
+                <a data-aos="zoom-in" data-aos-delay="780"
+                  ><i class="pi pi-twitter txt-primary fs-4"></i
+                ></a>
+                <a data-aos="zoom-in" data-aos-delay="860"
+                  ><i class="pi pi-instagram txt-primary fs-4"></i
+                ></a>
+                <a data-aos="zoom-in" data-aos-delay="940"
+                  ><i class="pi pi-linkedin txt-primary fs-4"></i
+                ></a>
               </div>
             </div>
           </div>

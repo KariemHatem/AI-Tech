@@ -5,13 +5,14 @@ import { HttpClient } from '@angular/common/http';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { MessageService } from 'primeng/api';
 import { ToastModule } from 'primeng/toast';
-
+import { LangServices } from '../../services/languages/lang-services';
+import { TranslatePipe } from '@ngx-translate/core';
 interface NewsletterForm {
   email: string;
 }
 
 @Component({
-  imports: [InfoButton, FormField, ToastModule],
+  imports: [InfoButton, FormField, ToastModule, TranslatePipe],
   selector: 'app-newsletter',
   styleUrl: './newsletter.scss',
   templateUrl: './newsletter.html',
@@ -24,6 +25,8 @@ export class Newsletter {
   private destroyRef = inject(DestroyRef);
   private messageService = inject(MessageService);
 
+  lang = inject(LangServices);
+
   // Flags
   subscribed = signal(false);
   errorMsg = signal('');
@@ -33,7 +36,7 @@ export class Newsletter {
   });
 
   newsForm = form(this.newsLetterF, (schemaPath) => {
-    email(schemaPath.email, { message: 'Please enter a valid email address.' });
+    email(schemaPath.email, { message: this.lang.translate('NEWSLETTER.EMAIL_INVALID') });
   });
 
   onSubmit(event: Event) {
@@ -54,18 +57,18 @@ export class Newsletter {
           this.errorMsg.set('');
           this.messageService.add({
             severity: 'success',
-            summary: 'Success Message',
-            detail: 'You have successfully subscribed to our newsletter.',
+            summary: this.lang.translate('NEWSLETTER.TOAST_SUCCESS_TITLE'),
+            detail: this.lang.translate('NEWSLETTER.TOAST_SUCCESS_DETAIL'),
             life: 4000,
           });
         },
 
         error: () => {
-          this.errorMsg.set('Something went wrong. Please try again.');
+          this.errorMsg.set(this.lang.translate('NEWSLETTER.ERROR'));
           this.messageService.add({
             severity: 'error',
-            summary: 'Error Message',
-            detail: 'Something went wrong. Please try again.',
+            summary: this.lang.translate('NEWSLETTER.TOAST_ERROR_TITLE'),
+            detail: this.lang.translate('NEWSLETTER.ERROR'),
             life: 4000,
           });
           this.subscribed.set(false);

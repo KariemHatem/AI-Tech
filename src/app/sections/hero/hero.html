@@ -2,23 +2,38 @@
   <div class="container">
     <div class="row d-flex justify-content-center align-items-center mb-3">
       <div class="col-lg-6 h-content">
-        <app-info-button btnText="AI.Tech" customeClass="txt-white bg-color border-light" />
+        <div data-aos="fade-down">
+          <app-info-button
+            [btnText]="'HERO.BADGE' | translate"
+            customeClass="txt-white bg-color border-light"
+          />
+        </div>
         <div class="head-txt text-white">
-          <h1 class="fw-bold display-3">Artificial Intelligence for Your Business</h1>
-          <p class="mb-3">
-            AI.Tech is a leading provider of artificial intelligence solutions, dedicated to helping
-            businesses of AI to drive innovation and growth.
+          <h1 class="fw-bold display-3" data-aos="fade-up" data-aos-delay="100">
+            {{ 'HERO.TITLE' | translate }}
+          </h1>
+          <p class="mb-3" data-aos="fade-up" data-aos-delay="250">
+            {{ 'HERO.SUBTITLE' | translate }}
           </p>
         </div>
-        <div class="btns d-flex gap-3 align-items-center">
-          <button class="btn rounded-pill px-3 py-2 border-light read-more">Read More</button>
+        <div class="btns d-flex gap-3 align-items-center" data-aos="fade-up" data-aos-delay="400">
+          <button class="btn rounded-pill px-3 py-2 border-light read-more">
+            {{ 'HERO.READ_MORE' | translate }}
+          </button>
           <button class="btn rounded-pill px-3 py-2 border-light bg-color text-white">
-            Contact Us
+            {{ 'HERO.CONTACT_US' | translate }}
           </button>
         </div>
       </div>
       <div class="col-lg-6">
-        <img src="assets/images/hero-img.png" class="hero-img mt-5" alt="AI.Tech" />
+        <img
+          src="assets/images/hero-img.png"
+          class="hero-img mt-5"
+          alt="AI.Tech"
+          data-aos="zoom-in"
+          data-aos-delay="300"
+          data-aos-duration="1000"
+        />
       </div>
     </div>
   </div>
