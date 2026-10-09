@@ -13,6 +13,7 @@ export class LangServices {
   private isBrowser = isPlatformBrowser(this.platformId);
   private readonly defaultLang: Lang = 'en';
   private readonly STORAGE_KEY = 'lang';
+  readonly langChange$ = this.translateService.onLangChange;
 
   lang = signal<Lang>(this.getIntialLang());
 

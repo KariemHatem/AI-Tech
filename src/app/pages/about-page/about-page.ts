@@ -11,10 +11,9 @@ import { LangServices } from '../../services/languages/lang-services';
   templateUrl: './about-page.html',
 })
 export class AboutPage {
-  private lang = inject(LangServices);
   breadCrumbsItems = signal<MenuItem[]>([
     {
-      label: this.lang.translate('ABOUT_PAGE.BREADCRUMB'),
+      label: 'ABOUT_PAGE.BREADCRUMB',
       icon: 'pi pi-info-circle',
       routerLink: '/about',
     },

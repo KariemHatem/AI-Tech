@@ -12,12 +12,10 @@ import { LangServices } from '../../services/languages/lang-services';
   templateUrl: './features-page.html',
 })
 export class FeaturesPage {
-  lang = inject(LangServices);
-
   breadCrumbsItems = signal<MenuItem[]>([
-    { label: this.lang.translate('PAGES.PAGES_LABEL'), icon: 'pi pi-folder' },
+    { label: 'PAGES.PAGES_LABEL', icon: 'pi pi-folder' },
     {
-      label: this.lang.translate('PAGES.FEATURES'),
+      label: 'PAGES.FEATURES',
       icon: 'pi pi-briefcase',
       routerLink: '/why-us',
     },

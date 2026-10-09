@@ -1,15 +1,16 @@
 import { Component, signal } from '@angular/core';
 import { HeroBreadcrumb } from '../../shared/hero-breadcrumb/hero-breadcrumb';
 import { MenuItem } from 'primeng/api';
+import { TranslatePipe } from '@ngx-translate/core';
 @Component({
-  imports: [HeroBreadcrumb],
+  imports: [HeroBreadcrumb, TranslatePipe],
   selector: 'app-terms-conditions',
   styleUrl: './terms-conditions.scss',
   templateUrl: './terms-conditions.html',
 })
 export class TermsConditions {
   breadCrumbsItems = signal<MenuItem[]>([
-    { label: 'Pages', icon: 'pi pi-folder' },
-    { label: 'Terms & Conditions', icon: 'pi pi-file-edit', routerLink: '/terms-conditions' },
+    { label: 'PAGES.PAGES_LABEL', icon: 'pi pi-folder' },
+    { label: 'PAGES.TERMS_CONDITIONS', icon: 'pi pi-file-edit', routerLink: '/terms-conditions' },
   ]);
 }

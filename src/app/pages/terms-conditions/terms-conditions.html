@@ -1,6 +1,6 @@
 <app-hero-breadcrumb
   [item]="breadCrumbsItems()"
-  [heading]="'Terms & Conditions'"
+  [heading]="'PAGES.TERMS_CONDITIONS' | translate"
 ></app-hero-breadcrumb>
 
 <section class="container-fluid pd-top pd-bottom">
@@ -8,104 +8,70 @@
     <div class="row justify-content-center">
       <div class="col-lg-9">
         <div class="policy-content">
-          <p class="text-muted mb-5">Last updated: October 2026</p>
+          <p class="text-muted mb-5">{{ 'TERMS.LAST_UPDATED' | translate }}</p>
 
           <h3 class="fw-bold mb-3">
-            <i class="pi pi-check-circle txt-primary me-2"></i>1. Acceptance of Terms
+            <i class="pi pi-check-circle txt-primary me-2"></i>{{ 'TERMS.S1_TITLE' | translate }}
           </h3>
-          <p class="txt-secondary mb-4">
-            By accessing or using the AI-Tech website and services, you agree to be bound by these
-            Terms and Conditions. If you do not agree with any part of these terms, please do not
-            use our website or services.
-          </p>
+          <p class="txt-secondary mb-4">{{ 'TERMS.S1_TEXT' | translate }}</p>
 
           <h3 class="fw-bold mb-3">
-            <i class="pi pi-briefcase txt-primary me-2"></i>2. Use of Services
+            <i class="pi pi-briefcase txt-primary me-2"></i>{{ 'TERMS.S2_TITLE' | translate }}
           </h3>
-          <p class="txt-secondary mb-2">
-            You agree to use our website and services only for lawful purposes. You must not:
-          </p>
+          <p class="txt-secondary mb-2">{{ 'TERMS.S2_INTRO' | translate }}</p>
           <ul class="txt-secondary mb-4">
-            <li>Use our services in any way that violates applicable laws or regulations</li>
-            <li>Attempt to gain unauthorized access to our systems or networks</li>
-            <li>Transmit any harmful code, viruses, or malicious software</li>
-            <li>Impersonate any person or entity, or misrepresent your affiliation</li>
+            <li>{{ 'TERMS.S2_ITEM1' | translate }}</li>
+            <li>{{ 'TERMS.S2_ITEM2' | translate }}</li>
+            <li>{{ 'TERMS.S2_ITEM3' | translate }}</li>
+            <li>{{ 'TERMS.S2_ITEM4' | translate }}</li>
           </ul>
 
           <h3 class="fw-bold mb-3">
-            <i class="pi pi-copy txt-primary me-2"></i>3. Intellectual Property
+            <i class="pi pi-copy txt-primary me-2"></i>{{ 'TERMS.S3_TITLE' | translate }}
           </h3>
-          <p class="txt-secondary mb-4">
-            All content on this website, including text, graphics, logos, and software, is the
-            property of AI-Tech and is protected by copyright and intellectual property laws. You
-            may not reproduce, distribute, or create derivative works without our prior written
-            consent.
-          </p>
+          <p class="txt-secondary mb-4">{{ 'TERMS.S3_TEXT' | translate }}</p>
 
           <h3 class="fw-bold mb-3">
-            <i class="pi pi-user-edit txt-primary me-2"></i>4. User Accounts
+            <i class="pi pi-user-edit txt-primary me-2"></i>{{ 'TERMS.S4_TITLE' | translate }}
           </h3>
-          <p class="txt-secondary mb-4">
-            If you create an account with us, you are responsible for maintaining the
-            confidentiality of your login credentials and for all activities that occur under your
-            account. Notify us immediately of any unauthorized use.
-          </p>
+          <p class="txt-secondary mb-4">{{ 'TERMS.S4_TEXT' | translate }}</p>
 
           <h3 class="fw-bold mb-3">
-            <i class="pi pi-credit-card txt-primary me-2"></i>5. Payments and Services
+            <i class="pi pi-credit-card txt-primary me-2"></i>{{ 'TERMS.S5_TITLE' | translate }}
           </h3>
-          <p class="txt-secondary mb-4">
-            Where applicable, any fees for services provided by AI-Tech will be clearly communicated
-            prior to purchase. All payments are non-refundable unless otherwise stated in a separate
-            agreement.
-          </p>
+          <p class="txt-secondary mb-4">{{ 'TERMS.S5_TEXT' | translate }}</p>
 
           <h3 class="fw-bold mb-3">
-            <i class="pi pi-exclamation-triangle txt-primary me-2"></i>6. Limitation of Liability
+            <i class="pi pi-exclamation-triangle txt-primary me-2"></i
+            >{{ 'TERMS.S6_TITLE' | translate }}
           </h3>
-          <p class="txt-secondary mb-4">
-            AI-Tech shall not be liable for any indirect, incidental, special, or consequential
-            damages arising from your use of our website or services, to the fullest extent
-            permitted by law.
-          </p>
-
-          <h3 class="fw-bold mb-3"><i class="pi pi-ban txt-primary me-2"></i>7. Termination</h3>
-          <p class="txt-secondary mb-4">
-            We reserve the right to suspend or terminate your access to our services at any time,
-            without notice, for conduct that violates these Terms and Conditions or is otherwise
-            harmful to other users or our business.
-          </p>
+          <p class="txt-secondary mb-4">{{ 'TERMS.S6_TEXT' | translate }}</p>
 
           <h3 class="fw-bold mb-3">
-            <i class="pi pi-sitemap txt-primary me-2"></i>8. Third-Party Links
+            <i class="pi pi-ban txt-primary me-2"></i>{{ 'TERMS.S7_TITLE' | translate }}
           </h3>
-          <p class="txt-secondary mb-4">
-            Our website may contain links to third-party websites. We do not endorse and are not
-            responsible for the content, policies, or practices of any third-party sites.
-          </p>
+          <p class="txt-secondary mb-4">{{ 'TERMS.S7_TEXT' | translate }}</p>
 
           <h3 class="fw-bold mb-3">
-            <i class="pi pi-refresh txt-primary me-2"></i>9. Changes to These Terms
+            <i class="pi pi-sitemap txt-primary me-2"></i>{{ 'TERMS.S8_TITLE' | translate }}
           </h3>
-          <p class="txt-secondary mb-4">
-            We may revise these Terms and Conditions at any time. Updates will be posted on this
-            page with a revised date, and continued use of our services constitutes acceptance of
-            the changes.
-          </p>
+          <p class="txt-secondary mb-4">{{ 'TERMS.S8_TEXT' | translate }}</p>
 
           <h3 class="fw-bold mb-3">
-            <i class="pi pi-balance-scale txt-primary me-2"></i>10. Governing Law
+            <i class="pi pi-refresh txt-primary me-2"></i>{{ 'TERMS.S9_TITLE' | translate }}
           </h3>
-          <p class="txt-secondary mb-4">
-            These Terms and Conditions shall be governed by and construed in accordance with
-            applicable local laws, without regard to conflict of law principles.
-          </p>
+          <p class="txt-secondary mb-4">{{ 'TERMS.S9_TEXT' | translate }}</p>
 
           <h3 class="fw-bold mb-3">
-            <i class="pi pi-envelope txt-primary me-2"></i>11. Contact Us
+            <i class="pi pi-balance-scale txt-primary me-2"></i>{{ 'TERMS.S10_TITLE' | translate }}
+          </h3>
+          <p class="txt-secondary mb-4">{{ 'TERMS.S10_TEXT' | translate }}</p>
+
+          <h3 class="fw-bold mb-3">
+            <i class="pi pi-envelope txt-primary me-2"></i>{{ 'TERMS.S11_TITLE' | translate }}
           </h3>
           <p class="txt-secondary mb-0">
-            If you have any questions about these Terms and Conditions, please contact us at
+            {{ 'TERMS.S11_TEXT' | translate }}
             <strong>aitech&#64;gmail.com</strong>.
           </p>
         </div>

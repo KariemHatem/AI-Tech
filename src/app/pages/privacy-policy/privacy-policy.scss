@@ -1,5 +1,16 @@
 .policy-content {
-  h3 { color: var(--dark-color, #14183e); }
-  ul { padding-left: 20px; line-height: 1.8; }
-  li { margin-bottom: 4px; }
+  h3 {
+    color: var(--dark-color, #14183e);
+  }
+  ul {
+    padding-left: 20px;
+    line-height: 1.8;
+  }
+  li {
+    margin-bottom: 4px;
+  }
+}
+
+i {
+  margin-inline: 5px;
 }

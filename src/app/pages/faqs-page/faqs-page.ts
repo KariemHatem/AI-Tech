@@ -12,11 +12,10 @@ import { LangServices } from '../../services/languages/lang-services';
   templateUrl: './faqs-page.html',
 })
 export class FaqsPage {
-  lang = inject(LangServices);
   breadCrumbsItems = signal<MenuItem[]>([
-    { label: this.lang.translate('PAGES.PAGES_LABEL'), icon: 'pi pi-folder' },
+    { label: 'PAGES.PAGES_LABEL', icon: 'pi pi-folder' },
     {
-      label: this.lang.translate('PAGES.FAQS'),
+      label: 'PAGES.FAQS',
       icon: 'pi pi-question-circle',
       routerLink: '/faqs',
     },
